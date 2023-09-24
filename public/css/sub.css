@@ -135,7 +135,7 @@
     background-size: cover;
 }
 .project_photo_wrap.dalseo:after {
-    background-image: url(../public/images/background_img_1.png);
+    background-image: url(../images/background_img_1.png);
 }
 .project_photo_wrap.daegu_edu:after {
     background : #f1f2f7;
@@ -144,37 +144,37 @@
     background : #fff0f0;
 }
 .project_photo_wrap.mdpaper:after {
-    background-image: url(../public/images/background_img_4.png);
+    background-image: url(../images/background_img_4.png);
 }
 .project_photo_wrap.neosleep:after {
-    background-image: url(../public/images/background_img_9.png);
+    background-image: url(../images/background_img_9.png);
 }
 .project_photo_wrap.fnbglobal:after {
-    background-image: url(../public/images/background_img_5.png);
+    background-image: url(../images/background_img_5.png);
 }
 .project_photo_wrap.donggu_edu:after {
-    background-image: url(../public/images/background_img_6.png);
+    background-image: url(../images/background_img_6.png);
 }
 .project_photo_wrap.gtl:after {
-    background-image: url(../public/images/background_img_7.png);
+    background-image: url(../images/background_img_7.png);
 }
 .project_photo_wrap.sabal:after {
-    background-image: url(../public/images/background_img_8.png);
+    background-image: url(../images/background_img_8.png);
 }
 .project_photo_wrap.memo:after {
-    background-image: url(../public/images/background_img_10.png);
+    background-image: url(../images/background_img_10.png);
 }
 .project_photo_wrap.hustar:after {
-    background-image: url(../public/images/background_img_12.png);
+    background-image: url(../images/background_img_12.png);
 }
 .project_photo_wrap.mixMatch:after {
-    background-image: url(../public/images/background_img_11.png);
+    background-image: url(../images/background_img_11.png);
 }
 .project_photo_wrap.sellerz_sns:after {
-    background-image: url(../public/images/background_img_10.png);
+    background-image: url(../images/background_img_10.png);
 }
 .project_photo_wrap.gbe_sns:after {
-    background-image: url(../public/images/background_img_10.png);
+    background-image: url(../images/background_img_10.png);
 }
 .project_photo_wrap .inner {
     display: flex;

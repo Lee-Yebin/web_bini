@@ -297,7 +297,7 @@
 .main_project {
     position: relative;
     z-index: 1;
-    background-image: url(../public/images/project_bg.png);
+    background-image: url(../images/project_bg.png);
     background-size: cover;
 }
 .main_project .inner {
@@ -337,7 +337,7 @@
     transform: translate(-50%, 0);
     width: 10px;
     height: 10px;
-    background-image: url(../public/images/main_icon.svg);
+    background-image: url(../images/main_icon.svg);
     background-size: cover;
 }
 .mp_list_wrap {
@@ -358,7 +358,7 @@
     z-index: -1;
     width: 200px;
     height: 200px;
-    background-image: url(../public/images/main_icon.svg);
+    background-image: url(../images/main_icon.svg);
     background-size: cover;
     opacity: .1;
 }
@@ -425,7 +425,7 @@
 /* history */
 .main_history {
     padding: 3rem 0;
-    background-image: url(../public/images/history_bg.png);
+    background-image: url(../images/history_bg.png);
     background-size: cover;
 }
 .main_history .inner {
@@ -519,7 +519,7 @@
     width: 30px;
     height: 30px;    
     background-size: cover;
-    background-image: url(../public/images/arrow2_left.svg);
+    background-image: url(../images/arrow2_left.svg);
 }
 .mh_slide .slick-prev:hover, .mh_slide .slick-prev:focus {
     background-color: #fff;
@@ -541,7 +541,7 @@
     width: 30px;
     height: 30px;    
     background-size: cover;
-    background-image: url(../public/images/arrow3_right.svg);
+    background-image: url(../images/arrow3_right.svg);
 }
 .mh_slide .slick-next:hover, .mh_slide .slick-next:focus {
     background-color: #fff;
@@ -601,7 +601,7 @@
 /* contact */
 .main_contact {
     padding: 7rem 0;
-    background: url(../public/images/bottom_bg.png);
+    background: url(../images/bottom_bg.png);
     text-align: center;
     background-size: cover;
 
