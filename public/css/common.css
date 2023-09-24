@@ -291,7 +291,7 @@ input[type="date"].basic_input {
 	transform: translate(-50%, 0);
 	width: 12px;
 	height: 12px;
-	background-image: url(/public/images/main_icon_b.svg);
+	background-image: url(../public/images/main_icon_b.svg);
 	background-size: 100%;
 }
 .gnb_menu_link {

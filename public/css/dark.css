@@ -74,10 +74,10 @@ html, body {
     z-index: 1;
 }
 .main_project {
-    background-image: url(/public/images/project_bg_dark.png);
+    background-image: url(../public/images/project_bg_dark.png);
 }
 .main_contact {
-    background: url(/public/images/bottom_bg_dark.png);
+    background: url(../public/images/bottom_bg_dark.png);
     background-size: cover;
 }
 .mc_info {
