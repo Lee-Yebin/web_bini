@@ -55,9 +55,9 @@ html, body {
     background-color: #010815d7;
 }
 .skill_item.black {
+    border: 3px solid var(--black-1-color);
     color: var(--black-1-color);
     background-color: var(--black-7-color);
-    border: 3px solid var(--black-1-color);
 }
 .skill_item.green {
     color: var(--black-7-color);

@@ -6,8 +6,8 @@
     height: 100vh;
 }
 .main_banner img {
-    height: 100%;
     width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 .main_banner:after {
@@ -371,8 +371,8 @@
     width: 100%;
     /* height: 0; */
     padding-bottom: 100%;
-    border-radius: 1rem;
     border: 1px solid var(--black-6-color);
+    border-radius: 1rem;
 }
 .mp_list_img {
     display: inline-block;   
@@ -401,24 +401,24 @@
     gap: 0 .5%;
 }
 .mp_list_num {
-	font-family:"Montserrat-Medium";
-    color: var(--black-3-color);
-    cursor: pointer;
-    width: 29px;
-    height: 30px;
-    border-radius: 3px;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 29px;
+    height: 30px;
+    border-radius: 3px;
+	font-family:"Montserrat-Medium";
+    color: var(--black-3-color);
+    cursor: pointer;
 }
 .mp_list_num:nth-child(1) {
-    color: var(--blue-color);
     border: 1px solid #7194fd;
+    color: var(--blue-color);
     background-color: #f3f6ff;
 }
 .mp_list_num.num_click {
-    color: var(--blue-color) !important;
     border: 1px solid #7194fd !important;
+    color: var(--blue-color) !important;
     background-color: #f3f6ff !important;
 }
 /* <!-- project --> */
@@ -548,8 +548,8 @@
 }
 .mh_slide_item {
     overflow: hidden;
-    border: 1px solid var(--black-5-color);
     width: 450px !important;
+    border: 1px solid var(--black-5-color);
     border-radius: 1rem;
 }
 .mh_slide_item a {
@@ -584,14 +584,14 @@
 }
 .mh_slide_tit p {
     display: inline-block;
+    overflow: hidden;
+    width: 250px;
     margin-left: 1rem;
 	font-family:"Pretendard-bold";
     font-size: var(--font-4-size);
     color: var(--black-1-color);
-    overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    width: 250px;
 }
 .mh_slide_txt {
     margin-top: .5rem;
@@ -636,27 +636,27 @@
     width: 100%;
 }
 .mc_info_tit {
-    max-width: 70px;
-    width: 100%;
-	font-family:"Montserrat-semibold";
     display: inline-block;
     position: relative;
+    width: 100%;
+    max-width: 70px;
+	font-family:"Montserrat-semibold";
     font-size: var(--font-5-size);
     color: var(--black-4-color);
 }
 .mc_info_tit:after {
     content: '';
-    background-color: var(--black-5-color);
-    width: 2px;
-    height: 10px;
     position: absolute;
     top: 50%;
-    transform: translate(0, -50%);
     right: .25rem;
+    transform: translate(0, -50%);
+    width: 2px;
+    height: 10px;
+    background-color: var(--black-5-color);
 }
 .mc_info_txt {
-	font-family:"Montserrat-Medium";
     display: inline-block;
     padding-left: .25rem;
+	font-family:"Montserrat-Medium";
 }
 /* <!-- contact --> */
