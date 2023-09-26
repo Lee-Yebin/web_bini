@@ -404,6 +404,9 @@
     .about_profile {
         margin: .5rem 0;
     }
+    .project_tit_wrap  {
+        padding-top: 6rem
+    }
     .project_info_desc {
         flex-direction: column;
     }
