@@ -16,7 +16,7 @@ if (isDarkModeEnabled === 'true') {
 }
 
 function enableDarkMode() {
-    $('head').append('<link rel="stylesheet" href="https://lee-yebin.github.io/bini/css/dark.css" id="modeStylesheet">');
+    $('head').append('<link rel="stylesheet" href="../css/dark.css" id="modeStylesheet">');
     $('.darkMode').hide();
     $('.nightMode').show();
     // 이미지 클릭 시 dark 모드 아이콘으로 변경
