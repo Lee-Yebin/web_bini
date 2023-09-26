@@ -7,7 +7,8 @@
 	--black-4-color: #797C89;
 	--black-5-color: #55585c;
 	--black-6-color: #4C4F58;
-	--black-7-color: #0b1125;
+	--black-7-color: #070b1a;
+	--black-8-color: #020511;
 }
 html, body {
     background: var(--black-7-color);
@@ -31,7 +32,7 @@ html, body {
     max-width: 30px;
 }
 .h_menu_li_a.profile {
-    background-color: #040814;
+    background-color: var(--black-8-color);
 }
 .h_menu_li_hover {
     color: var(--black-7-color);
@@ -39,7 +40,7 @@ html, body {
 /* <!-- header --> */
 /* footer */
 .f_copy {
-    background: #040814;
+    background: var(--black-8-color);
     color: var(--black-4-color);
 }
 /* <!-- footer --> */
@@ -52,7 +53,7 @@ html, body {
     bottom: 0;
     left: 0;
     transition: 300ms;
-    background-color: #010815d7;
+    background-color: #010815db;
 }
 .skill_item.black {
     border: 3px solid var(--black-1-color);
@@ -76,6 +77,19 @@ html, body {
 .main_project {
     background-image: url(../images/project_bg_dark.png);
 }
+.mp_list_client {
+    background-color: var(--black-6-color);
+}
+.mp_list_num:nth-child(1) {
+    background-color: var(--black-7-color);
+    color: #fff;
+    border: 1px solid var(--black-5-color);
+}
+.mp_list_num.num_click {
+    background-color: var(--black-7-color) !important;
+    color: #fff !important;
+    border: 1px solid var(--black-5-color) !important;
+}
 .main_contact {
     background: url(../images/bottom_bg_dark.png);
     background-size: cover;
@@ -84,10 +98,17 @@ html, body {
     border: 5px solid #24293b;
 }
 /* sub */
+
 .project_tit_client {
-    background-color: #010815d7;
+    background-color: var(--black-8-color);
+}
+.next_project_item a:hover {
+    background-color: var(--black-8-color);   
 }
 .next_project_client {
-    background-color: #010815d7;
+    background-color: var(--black-8-color);
+}
+.site_more {
+    color: var(--black-7-color);
 }
 /* <!-- sub --> */

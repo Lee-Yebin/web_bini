@@ -91,7 +91,7 @@
                     <div class="h_menu_li_a night">
                         <img src="./public/images/night_icon.svg" alt="" class="h_menu_li_img">
                     </div>
-                    <p class="h_menu_li_hover">아침모드</p>
+                    <p class="h_menu_li_hover">라이트모드</p>
                 </li>
                 <li class="h_menu_li">
                     <a href="https://cottony-lycra-c7e.notion.site/BINI-9c9006b60da641119c39a634dddf4181" class="h_menu_li_a profile" target="_blank">
@@ -178,6 +178,10 @@
             Bini Portfolio <img src="./public/images/main_icon.svg" alt="" class="main_scroll_img">
             Bini Portfolio <img src="./public/images/main_icon.svg" alt="" class="main_scroll_img">
             Bini Portfolio <img src="./public/images/main_icon.svg" alt="" class="main_scroll_img">
+            Bini Portfolio <img src="./public/images/main_icon.svg" alt="" class="main_scroll_img">
+            Bini Portfolio <img src="./public/images/main_icon.svg" alt="" class="main_scroll_img">
+            Bini Portfolio <img src="./public/images/main_icon.svg" alt="" class="main_scroll_img">
+            Bini Portfolio <img src="./public/images/main_icon.svg" alt="" class="main_scroll_img">
         </span>
     </div>
     <!-- /text scroll -->
@@ -189,7 +193,7 @@
                 <img src="./public/images/main_icon.svg" alt="" class="main_tit_img">
                 <strong class="main_tit_name2">Skill</strong>
             </span>
-            <span class="ms_tit">이런 프로그램을 사용할 수 있어요!</span>
+            <span class="ms_tit">이런 프로그램을 <br class="mobile_br"> 사용할 수 있어요!</span>
             <p>
                 다양한 프로그램을 익히고 배우는 것을 좋아합니다. <br>
                 꾸준히 공부하면서 성장하고 있습니다 :)
@@ -341,6 +345,17 @@
                                 </span>
                             </a>
                         </li>
+                        <li class="mp_list_item mp_list_2">
+                            <a href="./sub/tamnanet.html">
+                                <div class="mp_list_photo">
+                                    <img src="./public/images/mp_photo_20.png" alt=""  class="mp_list_img">
+                                </div>
+                                <span class="mp_list_desc">
+                                    <p class="mp_list_date">작업기간 : 22.12</p>
+                                    <p class="mp_list_client">@ 탐나넷</p>
+                                </span>
+                            </a>
+                        </li>
                     </ul>
                     <div class="pagination mp_list_num_wrap"></div>
                 </div>
@@ -397,6 +412,17 @@
                                 </div>
                                 <span class="mp_list_desc">
                                     <p class="mp_list_date">작업기간 : 22.2</p>
+                                    <p class="mp_list_client">@ BINI</p>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="mp_list_item mp_list_2">
+                            <a href="./sub/naru.html">
+                                <div class="mp_list_photo">
+                                    <img src="./public/images/mp_photo_19.png" alt=""  class="mp_list_img">
+                                </div>
+                                <span class="mp_list_desc">
+                                    <p class="mp_list_date">작업기간 : 23.9</p>
                                     <p class="mp_list_client">@ BINI</p>
                                 </span>
                             </a>
@@ -675,6 +701,19 @@
             } else if (currentHash === '#tab3') {
                 $('.tab a[href="#tab3"]').click();
             }
+
+            // margin left : 0
+            setSection2Margin();
+            $(window).resize(function() {
+                setSection2Margin();
+            });
+            function setSection2Margin() {
+                const windowWidth = $(window).width();
+                const maxWidth = 1280; 
+                const margin = (windowWidth - maxWidth - 15) / 2; 
+                $('#main_history .inner').css('margin-left', margin + 'px'); 
+            }
+
             // slide
             $('.mh_slide').slick({
                 autoplaySpeed: 3000,

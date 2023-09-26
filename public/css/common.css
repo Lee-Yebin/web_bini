@@ -181,14 +181,16 @@ input[type="date"].basic_input {
 }
 
 /* <!-- title --> */
+/* br */
+.mobile_br {
+	display: none;
+}
+/* <!-- br --> */
 /* project - common */
 .center_img img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-}
-.project_photo_2.h300 {
-	height: 300px;
 }
 .project_photo_2.video video {
 	/* position: absolute;

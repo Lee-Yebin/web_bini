@@ -24,6 +24,7 @@
 .project_close_wrap {
     display: flex;
     justify-content: space-between;
+    align-items: flex-start;
     width: 100%;
 
 }
@@ -43,7 +44,6 @@
 .porject_close {
     display: flex;
     align-items: center;
-    margin-top: -2rem;
 }
 .porject_close img {
     margin-left: .5rem;
@@ -176,6 +176,9 @@
 .project_photo_wrap.gbe_sns:after {
     background-image: url(../images/background_img_10.png);
 }
+.project_photo_wrap.namgu:after {
+    background-image: url(../images/background_img_10.png);
+}
 .project_photo_wrap .inner {
     display: flex;
     position: relative;
@@ -190,13 +193,24 @@
     border-radius: 1rem;
 }
 .project_photo_pc {
+    display: flex;
+    flex-basis: 75%;
     overflow: hidden;
     overflow-y: scroll;
-    height: 550px;
+    position: relative;
+    height: 0;
     margin-right: 1rem;
+    padding-top: 40%;
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
     box-shadow: 0 0 15px #bebfc35c;
+}
+.project_photo_pc img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
 }
 .project_photo_pc::-webkit-scrollbar {
     width: 10px;
@@ -210,12 +224,23 @@
 	background-color: var(--black-7-color);
 }
 .project_photo_m {
+    display: flex;
+    flex-basis: 25%;
     overflow: hidden;
     overflow-y: scroll;
-    height: 550px;
+    position: relative;
+    width: 100%;
+    padding-top: 40%;
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;
     box-shadow: 0 0 15px #bebfc35c;
+}
+.project_photo_m img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
 }
 .project_photo_m::-webkit-scrollbar {
     width: 10px;
@@ -235,11 +260,21 @@
     justify-content: space-between;
 }
 .project_photo_2 {
+    display: flex;
     flex-basis: 49%;
     overflow: hidden;
-    height: 400px;
+    position: relative;
+    width: 100%;
+    padding-top: 30%;
     border: 1px solid var(--black-5-color);
     border-radius: 1rem;
+}
+.project_photo_2 img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
 }
 /* <!-- photo 2 type : 사진 w 50% --> */
 /* photo 3 type : 사진 - 텍스트 */
@@ -321,6 +356,10 @@
 /* <!-- photo 5 type : 카드뉴스 5개 --> */
 .project_cont_txt {
     padding: 2rem .5rem 3rem .5rem;
+    font-size: var(--font-4-size);
+}
+.project_cont_txt a {
+    border-bottom: 1px solid var(--black-4-color);
     font-size: var(--font-4-size);
 }
 .project_function {
