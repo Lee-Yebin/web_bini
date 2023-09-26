@@ -25,6 +25,7 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
+    width: 95%;
 	font-family:"Pretendard-bold";
     font-size: var(--font-0-size);
     color: #fff;
@@ -78,8 +79,10 @@
 
 }
 .about_photo {
+    overflow: hidden;
     width: 100%;
     max-width: 400px;
+    border-radius: 1rem;
 }
 .about_name_wrap {
     display: flex;
@@ -442,7 +445,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    flex-basis: 25%;
+    flex-basis: 20%;
     padding: 1rem 0;
 }
 .mh_txt {
@@ -494,8 +497,8 @@
     margin-left: .25rem;
 }
 .mh_slide {
-    flex-basis: 75%;
-    width: 75%;
+    flex-basis: 80%;
+    width: 80%;
 }
 .mh_slide .slick-slide {
     margin: 0 10px; 
@@ -624,7 +627,8 @@
     color: var(--black-1-color);
 }
 .mc_info {
-    width: 400px;
+    width: 90%;
+    max-width: 400px;
     margin-top: 2rem;
     padding: 1rem 2rem;
     border: 5px solid #dee5ff;

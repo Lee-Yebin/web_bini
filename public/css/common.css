@@ -181,6 +181,11 @@ input[type="date"].basic_input {
 }
 
 /* <!-- title --> */
+/* br */
+.mobile_br {
+	display: none;
+}
+/* <!-- br --> */
 /* project - common */
 .center_img img {
 	width: 100%;
