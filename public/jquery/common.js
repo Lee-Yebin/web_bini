@@ -19,14 +19,15 @@ $(function(){
         $('head').append('<link rel="stylesheet" href="../css/dark.css" id="modeStylesheet">');
         $('.darkMode').hide();
         $('.nightMode').show();
-        $('.profile > .h_menu_li_img').attr('src', '../images/memo_icon_dark.svg');
+        $('.profile > .h_menu_li_img').attr('src', 'https://lee-yebin.github.io/bini/images/memo_icon_dark.svg');
+        $('.profile > .h_menu_li_img').attr('src', 'https://lee-yebin.github.io/bini//images/memo_icon_dark.svg');
     }
 
     function disableDarkMode() {
         $('#modeStylesheet').remove();
         $('.nightMode').hide();
         $('.darkMode').show();
-        $('.profile > .h_menu_li_img').attr('src', '../public/images/memo_icon.svg');
+        $('.profile > .h_menu_li_img').attr('src', 'https://lee-yebin.github.io/bini//public/images/memo_icon.svg');
     }
 
     $('.darkMode').click(function () {
