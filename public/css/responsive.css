@@ -28,13 +28,13 @@
         /* flex-direction: column; */
     }
     .mh_tit_wrap {
-        padding: 0 2rem;
-        width: 30%;
         flex-basis: 30%;
+        width: 30%;
+        padding: 0 2rem;
     }
     .mh_slide {
-        width: 70%;
         flex-basis: 70%;
+        width: 70%;
     }
 }
 @media all and (max-width:1200px) {
@@ -174,12 +174,12 @@
         transform: rotate(-7deg) !important;
     }
     .skill_item.photoshop {
-        left: 19rem;
         bottom: 3.75rem;
+        left: 19rem;
     }
     .skill_item.xd {
-        left: 21.75rem;
         bottom: 0;
+        left: 21.75rem;
         transform: rotate(30deg) !important;
     }
     .skill_item.figma {
@@ -187,15 +187,15 @@
         left: 26.5rem;
     }
     .skill_item.zeplin {
-        left: 26.5rem;
         bottom: 1rem;
+        left: 26.5rem;
     }
     .skill_item.git {
         left: 17rem;
     }
     .skill_item.shine_green {
-        left: 21rem;
         bottom: 6rem;
+        left: 21rem;
     }
     .skill_item.shine_blue {
         bottom: -1rem;
@@ -296,8 +296,8 @@
         padding: 0;
     }
     .mc_tit {
-        font-size: var(--font-2-1-size);
         padding: 0 1rem;
+        font-size: var(--font-2-1-size);
         line-height: 1.25;
     }
     .main_contact p {
@@ -408,8 +408,11 @@
         flex-direction: column;
     }
     .project_name {
-        margin-left: 0;
         margin-top: .25rem;
+        margin-left: 0;
+    }
+    .project_photo_2 {
+        border-radius: .5rem;
     }
 }
 
@@ -436,12 +439,12 @@
         transform: rotate(-7deg) !important;
     }
     .skill_item.photoshop {
-        left: 13rem;
         bottom: 3.75rem;
+        left: 13rem;
     }
     .skill_item.xd {
-        left: 13.5rem;
         bottom: 1rem;
+        left: 13.5rem;
         transform: rotate(30deg) !important;
     }
     .skill_item.figma {
@@ -449,16 +452,16 @@
         left: 19rem;
     }
     .skill_item.zeplin {
-        left: 17.25rem;
         bottom: 1.6rem;
+        left: 17.25rem;
     }
     .skill_item.git {
-        left: 10rem;
         bottom: -.5rem;
+        left: 10rem;
     }
     .skill_item.shine_green {
-        left: 14rem;
         bottom: 5rem;
+        left: 14rem;
     }
     .skill_item.shine_blue {
         bottom: -1rem;
@@ -529,16 +532,16 @@
         max-width: 20px;
     }
     .mb_desc strong.step img {
-        margin-bottom: -.075rem;
         margin-right: .05rem;
+        margin-bottom: -.075rem;
     }
     .mb_desc strong.learning:after {
-        font-size: var(--font-7-size);
         top: -1rem;
+        font-size: var(--font-7-size);
     }
     .mb_desc strong.publisher:after {
-        font-size: var(--font-7-size);
         top: -1rem;
+        font-size: var(--font-7-size);
     }
     .main_scroll_txt {
         font-size: var(--font-1-size);
@@ -550,8 +553,8 @@
         gap: 0 2%;
     }
     .mh_btn {
-        font-size: var(--font-7-size);
         padding: .25rem 1rem;
+        font-size: var(--font-7-size);
     }
     .mh_slide_item {
         width: 300px !important;
@@ -578,12 +581,12 @@
         transform: rotate(-7deg) !important;
     }
     .skill_item.photoshop {
-        left: 2rem;
         bottom: 8rem;
+        left: 2rem;
     }
     .skill_item.xd {
-        left: 2.5rem;
         bottom: -.75rem;
+        left: 2.5rem;
         transform: rotate(30deg) !important;
     }
     .skill_item.figma {
@@ -592,16 +595,16 @@
         transform: rotate(25deg) !important;
     }
     .skill_item.zeplin {
-        left: 2.25rem;
         bottom: 11rem;
+        left: 2.25rem;
     }
     .skill_item.git {
         /* left: rem; */
         bottom: -.5rem;
     }
     .skill_item.shine_green {
-        left: 9.25rem;
         bottom: 7.25rem;
+        left: 9.25rem;
     }
     .skill_item.shine_green img {
         max-width: 50px;
@@ -618,21 +621,21 @@
         margin-bottom: 1.5rem;
     }
     .project_date strong {
-        border: none;
         padding: .35rem 0;
+        border: none;
         color: var(--black-1-color);
     }
     .project_name {
         margin-top: 0;
     }
     .project_name strong {
-        border: none;
         padding: .35rem 0;
+        border: none;
         color: var(--black-1-color);
     }
     .project_txt {
+        margin-top: .5rem;
         padding-top: .5rem;
-        margin-top: .5rem
     }
     .project_photo_wrap {
         padding-top: 1.5rem;
@@ -643,5 +646,8 @@
     .project_cont_txt {
         padding: 1.5rem .5rem;
     }
-    
+    .next_project_item a {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
