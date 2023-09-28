@@ -10,31 +10,31 @@
     <meta name="keywords" content="퍼블리셔, 웹디자인, 포트폴리오">
     <meta name="author" content="BINI 이예빈">
     <meta name="robots" content="index, follow">
-    <link rel="icon" type="image/png" href="./public/images/favicon.png">
+    <link rel="icon" type="image/png" href="../public/images/favicon.png">
 
     <meta property="og:type" content="website">
     <meta property="og:title" content="BINI | 웹 포트폴리오">
     <meta property="og:description" content="배움을 향해 달려가는 퍼블리셔 이예빈입니다">
-    <meta property="og:image" content="./public/images/og_logo_1.png">
+    <meta property="og:image" content="../public/images/og_logo_1.png">
     <meta property="og:url" content="bini-portfolio.com">
     <meta property="og:site_name" content="BINI | 웹 포트폴리오">
 
     <!-- css -->
-    <link rel="stylesheet" href="./public/css/animate.css">
-    <link rel="stylesheet" href="./public/css/base.css">
-    <link rel="stylesheet" href="./public/css/common.css">
-    <link rel="stylesheet" href="./public/css/main.css">
-    <link rel="stylesheet" href="./public/css/sub.css">
-    <link rel="stylesheet" href="./public/css/responsive.css">
+    <link rel="stylesheet" href="../public/css/animate.css">
+    <link rel="stylesheet" href="../public/css/base.css">
+    <link rel="stylesheet" href="../public/css/common.css">
+    <link rel="stylesheet" href="../public/css/main.css">
+    <link rel="stylesheet" href="../public/css/sub.css">
+    <link rel="stylesheet" href="../public/css/responsive.css">
     <!-- /css -->
     <!-- js -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
-    <script src="./public/jquery/common.js"></script>
+    <script src="../public/jquery/common.js"></script>
     <!-- /js -->
     <!-- slick -->
-    <link rel="stylesheet" type="text/css" href="./public/jquery/slick/slick.css?ver=7">
-    <link rel="stylesheet" type="text/css" href="./public/jquery/slick/slick-theme.css?ver=7">
-    <link rel="stylesheet" href="./public/jquery/slick/slick.min.js">
+    <link rel="stylesheet" type="text/css" href="../public/jquery/slick/slick.css?ver=7">
+    <link rel="stylesheet" type="text/css" href="../public/jquery/slick/slick-theme.css?ver=7">
+    <link rel="stylesheet" href="../public/jquery/slick/slick.min.js">
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!-- /slick -->
     <!-- aos -->
@@ -57,8 +57,8 @@
         <div class="inner">
             <h1 class="h_logo">
                 <a href="/" class="h_logo_a">
-                    <img src="./public/images/logo_w.svg" alt="bini portfolio 사진" class="h_logo_img_w">
-                    <img src="./public/images/logo.svg" alt="bini portfolio 사진" class="h_logo_img">
+                    <img src="../public/images/logo_w.svg" alt="bini portfolio 사진" class="h_logo_img_w">
+                    <img src="../public/images/logo.svg" alt="bini portfolio 사진" class="h_logo_img">
                 </a>
             </h1>
             <!-- menu -->
@@ -83,39 +83,100 @@
             <ul class="h_menu">
                 <li class="h_menu_li darkMode">
                     <div class="h_menu_li_a moon">
-                        <img src="./public/images/moon_icon.svg" alt="" class="h_menu_li_img">
+                        <img src="../public/images/moon_icon.svg" alt="" class="h_menu_li_img">
                     </div>
                     <p class="h_menu_li_hover">다크모드</p>
                 </li>
                 <li class="h_menu_li nightMode">
                     <div class="h_menu_li_a night">
-                        <img src="./public/images/night_icon.svg" alt="" class="h_menu_li_img">
+                        <img src="../public/images/night_icon.svg" alt="" class="h_menu_li_img">
                     </div>
                     <p class="h_menu_li_hover">라이트모드</p>
                 </li>
                 <li class="h_menu_li">
                     <a href="https://cottony-lycra-c7e.notion.site/BINI-9c9006b60da641119c39a634dddf4181" class="h_menu_li_a profile" target="_blank">
-                        <img src="./public/images/memo_icon.svg" alt="" class="h_menu_li_img">
+                        <img src="../public/images/memo_icon.svg" alt="" class="h_menu_li_img">
                     </a>
                     <p class="h_menu_li_hover">자기소개서</p>
                 </li>
                 <li class="h_menu_li">
                     <a href="./index.html#contact" class="h_menu_li_a mail">
-                        <img src="./public/images/mail_icon.svg" alt="" class="h_menu_li_img">
+                        <img src="../public/images/mail_icon.svg" alt="" class="h_menu_li_img">
                     </a>
                     <p class="h_menu_li_hover">연락하기</p>
                 </li>
             </ul>
+            <!-- m_menu -->
+            <div class="menu-icon">
+                <span class="menu-icon__line menu-icon__line-left"></span>
+                <span class="menu-icon__line"></span>
+                <span class="menu-icon__line menu-icon__line-right"></span>
+            </div>
+            <div class="menu-container">
+                <div class="menu-sliders"></div>
+                <div class="menu-sliders"></div>
+                <div class="menu">
+                    <div class="m_logo">
+                        <a href="/main">
+                            <img src="../public/images/logo_b.svg" alt="bini portfolio 사진" class="m_logo_dark">
+                            <img src="../public/images/logo_b.svg" alt="bini portfolio 사진" class="m_logo_night">
+                        </a>
+                    </div>
+                    <ul class="menu_item">
+                        <li class="">
+                            <a href="#main_about" class="mNavMenu_item tab_tit">ABOUT</a>
+                        </li>
+                        <li class="">
+                            <a href="#main_skill" class="mNavMenu_item tab_tit">SKILL</a>
+                        </li>
+                        <li class="">
+                            <a href="#main_project" class="mNavMenu_item tab_tit">PROJECT</a>
+                        </li>
+                        <li class="">
+                            <a href="#main_history" class="mNavMenu_item tab_tit">HISTORY</a>
+                        </li>
+                        <li class="">
+                            <a href="#contact" class="mNavMenu_item tab_tit">CONTACT</a>
+                        </li>
+                    </ul>
+                    <ul class="h_menu mobile">
+                        <li class="h_menu_li darkMode">
+                            <div class="h_menu_li_a moon">
+                                <img src="../public/images/moon_icon.svg" alt="" class="h_menu_li_img">
+                            </div>
+                            <p class="h_menu_li_hover">다크모드</p>
+                        </li>
+                        <li class="h_menu_li nightMode">
+                            <div class="h_menu_li_a night">
+                                <img src="../public/images/night_icon.svg" alt="" class="h_menu_li_img">
+                            </div>
+                            <p class="h_menu_li_hover">라이트모드</p>
+                        </li>
+                        <li class="h_menu_li">
+                            <a href="https://cottony-lycra-c7e.notion.site/BINI-9c9006b60da641119c39a634dddf4181" class="h_menu_li_a profile" target="_blank">
+                                <img src="../public/images/memo_icon.svg" alt="" class="h_menu_li_img">
+                            </a>
+                            <p class="h_menu_li_hover">자기소개서</p>
+                        </li>
+                        <li class="h_menu_li">
+                            <a href="./index.html#contact" class="h_menu_li_a mail">
+                                <img src="../public/images/mail_icon.svg" alt="" class="h_menu_li_img">
+                            </a>
+                            <p class="h_menu_li_hover">연락하기</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </header>
     <!-- /header -->
     <!-- content -->
     <!-- main banner -->
     <section class="main_banner">
-        <img src="./public/images/main_bg.png" alt="">
+        <img src="../public/images/main_bg.png" alt="">
         <div class="mb_desc">
             <strong class="learning">배움</strong>을 향해 달려가는 <strong class="publisher">퍼블리셔</strong> <br>
-            <strong class="step"><img src="./public/images/main_icon.svg" alt=""> 성장의 과정</strong>을 즐기는 사람
+            <strong class="step"><img src="../public/images/main_icon.svg" alt=""> 성장의 과정</strong>을 즐기는 사람
         </div>
     </section>
     <!-- /main banner -->
@@ -123,20 +184,20 @@
     <section class="main_about" id="main_about">
         <div class="inner">
             <div class="about_photo" data-aos="fade-right" data-aos-delay="50" data-aos-duration="500">
-                <img src="./public/images/profile_img.png" alt="" class="about_photo_img">
+                <img src="../public/images/profile_img.png" alt="" class="about_photo_img">
             </div>
             <div class="about_desc" data-aos="fade-left" data-aos-delay="50" data-aos-duration="500">
                 <span class="main_tit1">
                     <strong class="main_tit_name1">BINI</strong> 
-                    <img src="./public/images/main_icon.svg" alt="" class="main_tit_img">
+                    <img src="../public/images/main_icon.svg" alt="" class="main_tit_img">
                     <strong class="main_tit_name2">About</strong>
                 </span>
                 <div class="about_name_wrap">
                     <span class="about_name">이예빈 / 98.11.10</span>
                     <a href="https://cottony-lycra-c7e.notion.site/BINI-9c9006b60da641119c39a634dddf4181" class="about_profile" target="_blank">
                         자기소개 더보기 
-                        <img src="./public/images/arrow2_right.svg" alt="" class="about_profile_img">
-                        <img src="./public/images/arrow2_right_w.svg" alt="" class="about_profile_img_w">
+                        <img src="../public/images/arrow2_right.svg" alt="" class="about_profile_img">
+                        <img src="../public/images/arrow2_right_w.svg" alt="" class="about_profile_img_w">
                     </a>
                 </div>
                 <span class="about_span">
@@ -146,7 +207,7 @@
                     </p>
                     <p class="about_span_p">
                         PHP 프레임워크 환경에서 HTML 마크업 작업이 가능하며 <br>
-                        재사용 가능한 CSS 코드를 효과적으로 만들 수 있습니다. <br>
+                        재사용할 수 있는 CSS 코드를 효과적으로 만들 수 있습니다. <br>
                     </p>
                     <p class="about_span_p">
                         팀원과의 협력을 통해 더 좋은 결과물을 만들 수 있기에 커뮤니케이션을 중요시합니다. <br>
@@ -160,28 +221,28 @@
     <!-- text scroll -->
     <div class="main_scroll">
         <span class="main_scroll_txt">
-            Bini Portfolio <img src="./public/images/main_icon.svg" alt="" class="main_scroll_img">
-            Bini Portfolio <img src="./public/images/main_icon.svg" alt="" class="main_scroll_img">
-            Bini Portfolio <img src="./public/images/main_icon.svg" alt="" class="main_scroll_img">
-            Bini Portfolio <img src="./public/images/main_icon.svg" alt="" class="main_scroll_img">
-            Bini Portfolio <img src="./public/images/main_icon.svg" alt="" class="main_scroll_img">
-            Bini Portfolio <img src="./public/images/main_icon.svg" alt="" class="main_scroll_img">
-            Bini Portfolio <img src="./public/images/main_icon.svg" alt="" class="main_scroll_img">
-            Bini Portfolio <img src="./public/images/main_icon.svg" alt="" class="main_scroll_img">
-            Bini Portfolio <img src="./public/images/main_icon.svg" alt="" class="main_scroll_img">
-            Bini Portfolio <img src="./public/images/main_icon.svg" alt="" class="main_scroll_img">
-            Bini Portfolio <img src="./public/images/main_icon.svg" alt="" class="main_scroll_img">
-            Bini Portfolio <img src="./public/images/main_icon.svg" alt="" class="main_scroll_img">
-            Bini Portfolio <img src="./public/images/main_icon.svg" alt="" class="main_scroll_img">
-            Bini Portfolio <img src="./public/images/main_icon.svg" alt="" class="main_scroll_img">
-            Bini Portfolio <img src="./public/images/main_icon.svg" alt="" class="main_scroll_img">
-            Bini Portfolio <img src="./public/images/main_icon.svg" alt="" class="main_scroll_img">
-            Bini Portfolio <img src="./public/images/main_icon.svg" alt="" class="main_scroll_img">
-            Bini Portfolio <img src="./public/images/main_icon.svg" alt="" class="main_scroll_img">
-            Bini Portfolio <img src="./public/images/main_icon.svg" alt="" class="main_scroll_img">
-            Bini Portfolio <img src="./public/images/main_icon.svg" alt="" class="main_scroll_img">
-            Bini Portfolio <img src="./public/images/main_icon.svg" alt="" class="main_scroll_img">
-            Bini Portfolio <img src="./public/images/main_icon.svg" alt="" class="main_scroll_img">
+            Bini Portfolio <img src="../public/images/main_icon.svg" alt="" class="main_scroll_img">
+            Bini Portfolio <img src="../public/images/main_icon.svg" alt="" class="main_scroll_img">
+            Bini Portfolio <img src="../public/images/main_icon.svg" alt="" class="main_scroll_img">
+            Bini Portfolio <img src="../public/images/main_icon.svg" alt="" class="main_scroll_img">
+            Bini Portfolio <img src="../public/images/main_icon.svg" alt="" class="main_scroll_img">
+            Bini Portfolio <img src="../public/images/main_icon.svg" alt="" class="main_scroll_img">
+            Bini Portfolio <img src="../public/images/main_icon.svg" alt="" class="main_scroll_img">
+            Bini Portfolio <img src="../public/images/main_icon.svg" alt="" class="main_scroll_img">
+            Bini Portfolio <img src="../public/images/main_icon.svg" alt="" class="main_scroll_img">
+            Bini Portfolio <img src="../public/images/main_icon.svg" alt="" class="main_scroll_img">
+            Bini Portfolio <img src="../public/images/main_icon.svg" alt="" class="main_scroll_img">
+            Bini Portfolio <img src="../public/images/main_icon.svg" alt="" class="main_scroll_img">
+            Bini Portfolio <img src="../public/images/main_icon.svg" alt="" class="main_scroll_img">
+            Bini Portfolio <img src="../public/images/main_icon.svg" alt="" class="main_scroll_img">
+            Bini Portfolio <img src="../public/images/main_icon.svg" alt="" class="main_scroll_img">
+            Bini Portfolio <img src="../public/images/main_icon.svg" alt="" class="main_scroll_img">
+            Bini Portfolio <img src="../public/images/main_icon.svg" alt="" class="main_scroll_img">
+            Bini Portfolio <img src="../public/images/main_icon.svg" alt="" class="main_scroll_img">
+            Bini Portfolio <img src="../public/images/main_icon.svg" alt="" class="main_scroll_img">
+            Bini Portfolio <img src="../public/images/main_icon.svg" alt="" class="main_scroll_img">
+            Bini Portfolio <img src="../public/images/main_icon.svg" alt="" class="main_scroll_img">
+            Bini Portfolio <img src="../public/images/main_icon.svg" alt="" class="main_scroll_img">
         </span>
     </div>
     <!-- /text scroll -->
@@ -190,7 +251,7 @@
         <div class="inner">
             <span class="main_tit1">
                 <strong class="main_tit_name1">BINI</strong> 
-                <img src="./public/images/main_icon.svg" alt="" class="main_tit_img">
+                <img src="../public/images/main_icon.svg" alt="" class="main_tit_img">
                 <strong class="main_tit_name2">Skill</strong>
             </span>
             <span class="ms_tit">이런 프로그램을 <br class="mobile_br"> 사용할 수 있어요!</span>
@@ -201,7 +262,7 @@
             <!-- TODO 이거 와르르 네이버 나눔스퀘어 네오처럼할 생각임!  -->
             <div class="skill_wrap">
                 <div class="skill_item black html" data-aos="fade-up" data-aos-delay="50">HTML</div>
-                <div class="skill_item shine_blue" data-aos="fade-up" data-aos-delay="550"><img src="./public/images/astroid_blue.svg" alt=""></div>
+                <div class="skill_item shine_blue" data-aos="fade-up" data-aos-delay="550"><img src="../public/images/astroid_blue.svg" alt=""></div>
                 <div class="skill_item green css" data-aos="fade-up" data-aos-delay="500">CSS</div>
                 <div class="skill_item white js" data-aos="fade-up" data-aos-delay="150">JAVASCRIPT</div>
                 <div class="skill_item blue illustrator" data-aos="fade-up" data-aos-delay="100">ILLUSTRATOR</div>
@@ -209,7 +270,7 @@
                 <div class="skill_item white xd" data-aos="fade-up" data-aos-delay="350">XD</div>
                 <div class="skill_item blue figma" data-aos="fade-up" data-aos-delay="450">FIGMA</div>
                 <div class="skill_item green zeplin" data-aos="fade-up" data-aos-delay="400">ZEPLIN</div>
-                <div class="skill_item shine_green" data-aos="fade-up" data-aos-delay="600"><img src="./public/images/astroid_green.svg" alt=""></div>
+                <div class="skill_item shine_green" data-aos="fade-up" data-aos-delay="600"><img src="../public/images/astroid_green.svg" alt=""></div>
                 <div class="skill_item blue git" data-aos="fade-up" data-aos-delay="200">GIT</div>
             </div>
         </div>
@@ -222,7 +283,7 @@
                 <span class="main_tit2">
                     <span>
                         <strong class="main_tit2_name1">BINI</strong> 
-                        <img src="./public/images/main_icon.svg" alt="" class="main_tit2_img"> 
+                        <img src="../public/images/main_icon.svg" alt="" class="main_tit2_img"> 
                     </span>
                     <strong class="main_tit2_name2">Project</strong>
                 </span>
@@ -238,7 +299,7 @@
                         <li class="mp_list_item mp_list_2">
                             <a href="./sub/dalseo.html">
                                 <div class="mp_list_photo">
-                                    <img src="./public/images/mp_photo_1.png" alt=""  class="mp_list_img">
+                                    <img src="../public/images/mp_photo_1.png" alt=""  class="mp_list_img">
                                 </div>
                                 <span class="mp_list_desc">
                                     <p class="mp_list_date">작업기간 : 23.5 ~ 7</p>
@@ -249,7 +310,7 @@
                         <li class="mp_list_item mp_list_2">
                             <a href="./sub/daegu_edu.html">
                                 <div class="mp_list_photo">
-                                    <img src="./public/images/mp_photo_2.png" alt=""  class="mp_list_img">
+                                    <img src="../public/images/mp_photo_2.png" alt=""  class="mp_list_img">
                                 </div>
                                 <span class="mp_list_desc">
                                     <p class="mp_list_date">작업기간 : 23.8</p>
@@ -260,7 +321,7 @@
                         <li class="mp_list_item mp_list_2">
                             <a href="./sub/sellerz.html">                            
                                 <div class="mp_list_photo">
-                                    <img src="./public/images/mp_photo_3.png" alt=""  class="mp_list_img">
+                                    <img src="../public/images/mp_photo_3.png" alt=""  class="mp_list_img">
                                 </div>
                                 <span class="mp_list_desc">
                                     <p class="mp_list_date">작업기간 : 23.1 ~ 2</p>
@@ -271,7 +332,7 @@
                         <li class="mp_list_item mp_list_2">
                             <a href="./sub/mdpaper.html">
                                 <div class="mp_list_photo">
-                                    <img src="./public/images/mp_photo_4.png" alt=""  class="mp_list_img">
+                                    <img src="../public/images/mp_photo_4.png" alt=""  class="mp_list_img">
                                 </div>
                                 <span class="mp_list_desc">
                                     <p class="mp_list_date">작업기간 : 22.8 ~ 10</p>
@@ -282,7 +343,7 @@
                         <li class="mp_list_item mp_list_2">
                             <a href="./sub/neosleep.html">
                                 <div class="mp_list_photo">
-                                    <img src="./public/images/mp_photo_5.png" alt=""  class="mp_list_img">
+                                    <img src="../public/images/mp_photo_5.png" alt=""  class="mp_list_img">
                                 </div>
                                 <span class="mp_list_desc">
                                     <p class="mp_list_date">작업기간 : 22.10</p>
@@ -293,7 +354,7 @@
                         <li class="mp_list_item mp_list_2">
                             <a href="./sub/fnbglobal.html">
                                 <div class="mp_list_photo">
-                                    <img src="./public/images/mp_photo_6.png" alt=""  class="mp_list_img">
+                                    <img src="../public/images/mp_photo_6.png" alt=""  class="mp_list_img">
                                 </div>
                                 <span class="mp_list_desc">
                                     <p class="mp_list_date">작업기간 : 23.8</p>
@@ -304,7 +365,7 @@
                         <li class="mp_list_item mp_list_2">
                             <a href="./sub/donggu_edu.html">
                                 <div class="mp_list_photo">
-                                    <img src="./public/images/mp_photo_7.png" alt=""  class="mp_list_img">
+                                    <img src="../public/images/mp_photo_7.png" alt=""  class="mp_list_img">
                                 </div>
                                 <span class="mp_list_desc">
                                     <p class="mp_list_date">작업기간 : 21.10 ~ 11</p>
@@ -315,7 +376,7 @@
                         <li class="mp_list_item mp_list_2">
                             <a href="./sub/gtl.html">
                                 <div class="mp_list_photo">
-                                    <img src="./public/images/mp_photo_8.png" alt=""  class="mp_list_img">
+                                    <img src="../public/images/mp_photo_8.png" alt=""  class="mp_list_img">
                                 </div>
                                 <span class="mp_list_desc">
                                     <p class="mp_list_date">작업기간 : 22.2 ~ 3</p>
@@ -326,7 +387,7 @@
                         <li class="mp_list_item mp_list_2">
                             <a href="./sub/hustar.html">
                                 <div class="mp_list_photo">
-                                    <img src="./public/images/mp_photo_9-1.png" alt=""  class="mp_list_img">
+                                    <img src="../public/images/mp_photo_9-1.png" alt=""  class="mp_list_img">
                                 </div>
                                 <span class="mp_list_desc">
                                     <p class="mp_list_date">작업기간 : 21.11 ~ 22.2 </p>
@@ -335,24 +396,24 @@
                             </a>
                         </li>
                         <li class="mp_list_item mp_list_2">
-                            <a href="./sub/memo.html">
-                                <div class="mp_list_photo">
-                                    <img src="./public/images/mp_photo_10.png" alt=""  class="mp_list_img">
-                                </div>
-                                <span class="mp_list_desc">
-                                    <p class="mp_list_date">작업기간 : 23.3</p>
-                                    <p class="mp_list_client">@ BINI</p>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="mp_list_item mp_list_2">
                             <a href="./sub/tamnanet.html">
                                 <div class="mp_list_photo">
-                                    <img src="./public/images/mp_photo_20.png" alt=""  class="mp_list_img">
+                                    <img src="../public/images/mp_photo_20.png" alt=""  class="mp_list_img">
                                 </div>
                                 <span class="mp_list_desc">
                                     <p class="mp_list_date">작업기간 : 22.12</p>
                                     <p class="mp_list_client">@ 탐나넷</p>
+                                </span>
+                            </a>
+                        </li>
+                        <li class="mp_list_item mp_list_2">
+                            <a href="./sub/memo.html">
+                                <div class="mp_list_photo">
+                                    <img src="../public/images/mp_photo_10.png" alt=""  class="mp_list_img">
+                                </div>
+                                <span class="mp_list_desc">
+                                    <p class="mp_list_date">작업기간 : 23.3</p>
+                                    <p class="mp_list_client">@ BINI</p>
                                 </span>
                             </a>
                         </li>
@@ -364,7 +425,7 @@
                         <li class="mp_list_item mp_list_2">
                             <a href="./sub/mix&match.html">
                                 <div class="mp_list_photo">
-                                    <img src="./public/images/mp_photo_14.png" alt=""  class="mp_list_img">
+                                    <img src="../public/images/mp_photo_14.png" alt=""  class="mp_list_img">
                                 </div>
                                 <span class="mp_list_desc">
                                     <p class="mp_list_date">작업기간 : 22.7</p>
@@ -375,7 +436,7 @@
                         <li class="mp_list_item mp_list_2">
                             <a href="./sub/sellerz_sns.html">
                                 <div class="mp_list_photo">
-                                    <img src="./public/images/mp_photo_16.png" alt=""  class="mp_list_img">
+                                    <img src="../public/images/mp_photo_16.png" alt=""  class="mp_list_img">
                                 </div>
                                 <span class="mp_list_desc">
                                     <p class="mp_list_date">작업기간 : 23.3 ~ 5</p>
@@ -386,7 +447,7 @@
                         <li class="mp_list_item mp_list_2">
                             <a href="./sub/gbe_edu_sns.html">
                                 <div class="mp_list_photo">
-                                    <img src="./public/images/mp_photo_17.png" alt=""  class="mp_list_img">
+                                    <img src="../public/images/mp_photo_17.png" alt=""  class="mp_list_img">
                                 </div>
                                 <span class="mp_list_desc">
                                     <p class="mp_list_date">작업기간 : 21.2 ~ 3</p>
@@ -397,7 +458,7 @@
                         <li class="mp_list_item mp_list_2">
                             <a href="./sub/nam_sns.html">
                                 <div class="mp_list_photo">
-                                    <img src="./public/images/mp_photo_18.png" alt=""  class="mp_list_img">
+                                    <img src="../public/images/mp_photo_18.png" alt=""  class="mp_list_img">
                                 </div>
                                 <span class="mp_list_desc">
                                     <p class="mp_list_date">작업기간 : 20.9 ~ 12</p>
@@ -408,7 +469,7 @@
                         <li class="mp_list_item mp_list_2">
                             <a href="./sub/red_ginseng.html">
                                 <div class="mp_list_photo">
-                                    <img src="./public/images/mp_photo_11.png" alt=""  class="mp_list_img">
+                                    <img src="../public/images/mp_photo_11.png" alt=""  class="mp_list_img">
                                 </div>
                                 <span class="mp_list_desc">
                                     <p class="mp_list_date">작업기간 : 22.2</p>
@@ -419,7 +480,7 @@
                         <li class="mp_list_item mp_list_2">
                             <a href="./sub/naru.html">
                                 <div class="mp_list_photo">
-                                    <img src="./public/images/mp_photo_19.png" alt=""  class="mp_list_img">
+                                    <img src="../public/images/mp_photo_19.png" alt=""  class="mp_list_img">
                                 </div>
                                 <span class="mp_list_desc">
                                     <p class="mp_list_date">작업기간 : 23.9</p>
@@ -435,7 +496,7 @@
                         <li class="mp_list_item mp_list_2">
                             <a href="./sub/dalseo_leflet.html">
                                 <div class="mp_list_photo">
-                                    <img src="./public/images/mp_photo_12.png" alt=""  class="mp_list_img">
+                                    <img src="../public/images/mp_photo_12.png" alt=""  class="mp_list_img">
                                 </div>
                                 <span class="mp_list_desc">
                                     <p class="mp_list_date">작업기간 : 22.7</p>
@@ -446,7 +507,7 @@
                         <li class="mp_list_item mp_list_2">
                             <a href="./sub/dalseo_poster.html">
                                 <div class="mp_list_photo">
-                                    <img src="./public/images/mp_photo_13.png" alt=""  class="mp_list_img">
+                                    <img src="../public/images/mp_photo_13.png" alt=""  class="mp_list_img">
                                 </div>
                                 <span class="mp_list_desc">
                                     <p class="mp_list_date">작업기간 : 22.7</p>
@@ -457,7 +518,7 @@
                         <li class="mp_list_item mp_list_2">
                             <a href="./sub/neoroutine_leflet.html">
                                 <div class="mp_list_photo">
-                                    <img src="./public/images/mp_photo_15.png" alt=""  class="mp_list_img">
+                                    <img src="../public/images/mp_photo_15.png" alt=""  class="mp_list_img">
                                 </div>
                                 <span class="mp_list_desc">
                                     <p class="mp_list_date">작업기간 : 22.10</p>
@@ -479,7 +540,7 @@
                 <span class="main_tit2">
                     <span>
                         <strong class="main_tit2_name1">BINI</strong> 
-                        <img src="./public/images/main_icon.svg" alt="" class="main_tit2_img"> 
+                        <img src="../public/images/main_icon.svg" alt="" class="main_tit2_img"> 
                     </span>
                     <strong class="main_tit2_name2">History</strong>
                 </span>
@@ -489,15 +550,15 @@
                 </p>
                 <a href="https://bee-blog-0.tistory.com" class="mh_btn" target="_blank">
                     BINI BLOG 
-                    <img src="./public/images/arrow_right.svg" alt="" class="mh_btn_img">
-                    <img src="./public/images/arrow_right_w.svg" alt="" class="mh_btn_img_w">
+                    <img src="../public/images/arrow_right.svg" alt="" class="mh_btn_img">
+                    <img src="../public/images/arrow_right_w.svg" alt="" class="mh_btn_img_w">
                 </a>
             </div>
             <div class="mh_slide">
                 <div class="mh_slide_item">
                     <a href="#">
                         <div class="mh_slide_photo">
-                            <img src="./public/images/blog_photo_1.png" alt="">
+                            <img src="../public/images/blog_photo_1.png" alt="">
                         </div>
                         <div class="mh_slide_desc">
                             <span class="mh_slide_tit">
@@ -515,7 +576,7 @@
                 <div class="mh_slide_item">
                     <a href="#">
                         <div class="mh_slide_photo">
-                            <img src="./public/images/blog_photo_2.png" alt="">
+                            <img src="../public/images/blog_photo_2.png" alt="">
                         </div>
                         <div class="mh_slide_desc">
                             <span class="mh_slide_tit">
@@ -533,7 +594,7 @@
                 <div class="mh_slide_item">
                     <a href="#">
                         <div class="mh_slide_photo">
-                            <img src="./public/images/blog_photo_3.png" alt="">
+                            <img src="../public/images/blog_photo_3.png" alt="">
                         </div>
                         <div class="mh_slide_desc">
                             <span class="mh_slide_tit">
@@ -551,7 +612,7 @@
                 <div class="mh_slide_item">
                     <a href="#">
                         <div class="mh_slide_photo">
-                            <img src="./public/images/blog_photo_4.png" alt="">
+                            <img src="../public/images/blog_photo_4.png" alt="">
                         </div>
                         <div class="mh_slide_desc">
                             <span class="mh_slide_tit">
@@ -575,7 +636,7 @@
         <div class="inner" data-aos="fade-up" data-aos-delay="130" data-aos-duration="700">
             <span class="main_tit1">
                 <strong class="main_tit_name1">BINI</strong> 
-                <img src="./public/images/main_icon.svg" alt="" class="main_tit_img">
+                <img src="../public/images/main_icon.svg" alt="" class="main_tit_img">
                 <strong class="main_tit_name2">Contact</strong>
             </span>
             <span class="mc_tit">좋아하는 일을 함께 하고 싶습니다</span>

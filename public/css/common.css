@@ -366,6 +366,12 @@ input[type="date"].basic_input {
 	width: 100%;
 	max-width: 20px;
 }
+#mNavSubMenu {
+	display:none;
+}
+.menu-icon,.menu-container {
+	display: none;
+}
 /* <!-- header --> */
 /* footer */
 #footer {

@@ -112,3 +112,19 @@ html, body {
     color: var(--black-7-color);
 }
 /* <!-- sub --> */
+/* mobile */
+@media all and (max-width:768px) {
+    .menu-icon__line {
+        background-color: #fff;
+    }
+    body.menu-open .menu {
+        background-color: rgba(37, 33, 33, 0.8) !important;
+    }
+    .menu .m_logo .m_logo_dark {
+        display: block;
+    }
+    .menu .m_logo .m_logo_night {
+        display: none;
+    }
+}
+/* <!-- mobile --> */
