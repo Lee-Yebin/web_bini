@@ -179,6 +179,15 @@
 .project_photo_wrap.namgu:after {
     background-image: url(../images/background_img_10.png);
 }
+.project_photo_wrap.tamnanet:after {
+    background-image: url(../images/background_img_13.png);
+}
+.project_photo_wrap.neoroutine:after {
+    background-image: url(../images/background_img_5.png);
+}
+.project_photo_wrap.dalseo_poster:after {
+    background-image: url(../images/background_img_14.png);
+}
 .project_photo_wrap .inner {
     display: flex;
     position: relative;
@@ -283,7 +292,7 @@
     overflow: hidden;
     position: relative;
     width: 100%;
-    padding-top: 30%;
+    padding-top: 25%;
     border: 1px solid var(--black-5-color);
     border-radius: 1rem;
 }
@@ -293,13 +302,6 @@
     top: 0;
     left: 50%;
     transform: translate(-50%, 0);
-}
-.project_photo_2 img {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
-    width: 100%;
 }
 /* <!-- photo 2 type : 사진 w 50% --> */
 /* photo 3 type : 사진 - 텍스트 */
@@ -380,7 +382,7 @@
 }
 /* <!-- photo 5 type : 카드뉴스 5개 --> */
 .project_cont_txt {
-    padding: 2rem .5rem 3rem .5rem;
+    padding: 2rem .5rem;
     font-size: var(--font-4-size);
 }
 .project_cont_txt a {
@@ -394,6 +396,11 @@
 }
 .project_function img { 
     margin-right: .3rem;
+}
+.project_function a {
+    border-bottom: 1px solid var(--black-4-color);
+    font-size: var(--font-4-size);
+    margin-left: .5rem;
 }
 .sub_btn {
     display: flex;
