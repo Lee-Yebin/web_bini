@@ -242,6 +242,9 @@ input[type="date"].basic_input {
 .h_logo_img_w {
 	display: block;
 }
+.h_logo_img_w_dark {
+	display: none;
+}
 .h_logo_img {
 	display: none;
 }

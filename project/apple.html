@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Apple iPhoneX Clone</title>
+<style>
+    body {
+        background: black;
+    }
+    #cover_canvas {
+        position: fixed;
+        top: 0;
+        left: 0;
+    }
+    .video_wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+    #video_bg {
+        transform: scale(1);
+    }
+</style>
+</head>
+<body>
+    <div class="video_wrapper">
+        <video muted="" playsinline="" autoplay loop src="" id="video_bg"></video>
+    </div>
+    <canvas id="cover_canvas"></canvas>
+    <script>
+        use-script;
+        var elemCanvas,
+            elemVideo,
+            context,
+            windowWidth = 0,
+            windowwHeight = 0,
+            canvasWidth = 0,
+            canvasHeight = 0,
+            scrollY = 0,
+            relativeScrollY = 0,
+            prevDurations = 0,
+            totalScrollHeight = 0,
+            currentkeyFrame = 0,
+            phoneWidth = 1380,
+            phoneHeight = 3000,
+
+            resizeHandler,
+            scrollHandler,
+            render,
+            drawCanvas,
+            calcAnimationValue,
+            calcfinalValue,
+            init,
+            pixelDuration = 0,
+            keyframes = [
+                {
+                    animationValues: {
+                        videoScale: [1, 2],
+                        triangleMove: [0, 200],
+                        rectangleMove: [0, 500]
+                    }
+                },
+                {
+                    animationValues: {
+                        videoScale: [2, 0.5],
+                        triangleMove: [200, 1000],
+                        rectangleMove: [500, 500]
+                    }
+                }
+            ],
+            elemBody = document.body,
+            elemCanvas = document.getElementById('cover_canvas'),
+            context = elemCanvas.getContext('2d'); // canvas에선 꼭 context를 활용함 정보나 내용을 그리는 것
+            elemVideo = document.getElementById('video_bg');
+        
+            init = function() {
+                windowWidth = window.innerWidth; // 브라우저 창크기 가져오기
+                windowHeight = window.innerHeight; // 브라우저 창높이 가져오기 
+
+                resizeHandler();
+                render();
+
+                window.addEventListener('resize', function() {
+                    requestAnimationFrame(resizeHandler);
+                });
+                window.addEventListener('scroll', function(){
+                    requestAnimationFrame(scrollHandler);
+                });
+                elemPhone = document.createElement('img');
+                elemPhone.src = 'phone.png';
+            }
+
+
+    </script>
+</body>
+</html>

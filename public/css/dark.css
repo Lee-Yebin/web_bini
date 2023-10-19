@@ -31,12 +31,22 @@ html, body {
 .night .h_menu_li_img {
     max-width: 30px;
 }
+.h_logo_img_w_dark {
+    display: block;
+}
+.h_logo_img_w {
+    display: none;
+}
 .h_menu_li_a.profile {
     background-color: var(--black-8-color);
 }
 .h_menu_li_hover {
     color: var(--black-7-color);
 }
+.gnb_menu.on a:after {
+    background-image: url(../images/main_icon.svg);
+}
+
 /* <!-- header --> */
 /* footer */
 .f_copy {
@@ -78,7 +88,7 @@ html, body {
     background-image: url(../images/project_bg_dark.png);
 }
 .mp_list_client {
-    background-color: var(--black-6-color);
+    background-color: transparent;
 }
 .mp_list_num:nth-child(1) {
     background-color: var(--black-7-color);
