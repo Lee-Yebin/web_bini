@@ -192,6 +192,12 @@ input[type="date"].basic_input {
 	height: 100%;
 	object-fit: cover;
 }
+.center_img2 img {
+	margin: 0 auto; 
+	max-width: 1080px; 
+	width: 100%;
+	border-radius: 1rem;
+}
 .project_photo_2.video video {
 	object-fit: fill;
 	width: 101%;
@@ -239,6 +245,9 @@ input[type="date"].basic_input {
 	max-width: 140px;
 	transition: 500ms;
 }
+.h_logo_img_w_main {
+	display: block;
+}
 .h_logo_img_w {
 	display: block;
 }
@@ -249,6 +258,12 @@ input[type="date"].basic_input {
 	display: none;
 }
 #header.nav_scroll .h_logo_img_w {
+	display: none;
+}
+#header.nav_scroll .h_logo_img_w_main {
+	display: none;
+}
+#header.nav_scroll .h_logo_img_w_dark {
 	display: none;
 }
 #header.nav_scroll .h_logo_img {

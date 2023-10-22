@@ -422,7 +422,6 @@
     }
     header:hover .menu-icon__line {
         z-index:9999;
-        background-color:#333;
     }
     .menu-icon__line-left {
         width:15px;

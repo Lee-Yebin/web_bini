@@ -188,6 +188,21 @@
 .project_photo_wrap.dalseo_poster:after {
     background-image: url(../images/background_img_14.png);
 }
+.project_photo_wrap.bibimbap:after {
+    background-image: url(../images/background_img_17.png);
+}
+.project_photo_wrap.goblin_bookstore:after {
+    background-image: url(../images/background_img_16.png);
+}
+.project_photo_wrap.korea_movie:after {
+    background-image: url(../images/background_img_15.png);
+}
+.project_photo_wrap.labor_step:after {
+    background-image: url(../images/background_img_18.png);
+}
+.project_photo_wrap.tiger:after {
+    background-image: url(../images/background_img_19.png);
+}
 .project_photo_wrap .inner {
     display: flex;
     position: relative;

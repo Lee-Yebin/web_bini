@@ -44,7 +44,7 @@ html, body {
     color: var(--black-7-color);
 }
 .gnb_menu.on a:after {
-    background-image: url(../images/main_icon.svg);
+    background-image: url(../images/main_icon_w.svg);
 }
 
 /* <!-- header --> */
@@ -128,7 +128,7 @@ html, body {
         background-color: #fff;
     }
     body.menu-open .menu {
-        background-color: rgba(37, 33, 33, 0.8) !important;
+        background-color: #101527c9 !important;
     }
     .menu .m_logo .m_logo_dark {
         display: block;
