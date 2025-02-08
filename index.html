@@ -1,24 +1,22 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BINI | 웹 포트폴리오</title>
-
     <meta name="description" content="BINI | 웹 포트폴리오">
     <meta name="keywords" content="퍼블리셔, 웹디자인, 포트폴리오">
     <meta name="author" content="BINI 이예빈">
     <meta name="robots" content="index, follow">
     <link rel="icon" type="image/png" href="./public/images/favicon.png">
-
     <meta property="og:type" content="website">
     <meta property="og:title" content="BINI | 웹 포트폴리오">
     <meta property="og:description" content="배움을 향해 달려가는 퍼블리셔 이예빈입니다">
     <meta property="og:image" content="./public/images/og_logo_1.png">
     <meta property="og:url" content="bini-portfolio.com">
     <meta property="og:site_name" content="BINI | 웹 포트폴리오">
-
     <!-- css -->
     <link rel="stylesheet" href="./public/css/animate.css">
     <link rel="stylesheet" href="./public/css/base.css">
@@ -29,7 +27,9 @@
     <!-- /css -->
     <!-- js -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-latest.min.js"></script>
+
     <script src="./public/jquery/common.js"></script>
+
     <!-- /js -->
     <!-- slick -->
     <link rel="stylesheet" type="text/css" href="./public/jquery/slick/slick.css?ver=7">
@@ -37,10 +37,21 @@
     <link rel="stylesheet" href="./public/jquery/slick/slick.min.js">
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!-- /slick -->
+    <!-- swiper -->
+    <link rel="stylesheet" type="text/css" href="./public/jquery/swiper/swiper.min.css">
+    <script src="./public/jquery/swiper/swiper.min.js"></script>
+    <!-- /swiper -->
     <!-- aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- /aos -->
+
+    <script src="./public/jquery/gsap/gsap.min.js"></script>
+    <script src="./public/jquery/gsap/ScrollSmoother.min.js"></script>
+    <script src="./public/jquery/gsap/ScrollToPlugin.min.js"></script>
+    <script src="./public/jquery/gsap/ScrollTrigger.min.js"></script>
+    <script src="./public/jquery/gsap/SplitText.min.js"></script>
+    <script src="./public/jquery/scroll.js"></script>
     <style>
         .tab-content {
             display: none;
@@ -51,13 +62,14 @@
         }
     </style>
 </head>
+
 <body>
     <!-- header -->
     <header id="header">
         <div class="inner">
             <h1 class="h_logo">
                 <a href="#" class="h_logo_a">
-                    <img src="./public/images/logo_w.svg" alt="bini portfolio 사진" class="h_logo_img_w_main">
+                    <img src="./public/images/logo_w_01.svg" alt="bini portfolio 사진" class="h_logo_img_w_main">
                     <img src="./public/images/logo.svg" alt="bini portfolio 사진" class="h_logo_img">
                 </a>
             </h1>
@@ -73,7 +85,7 @@
                     <a href="#main_project" class="gnb_menu_link">PROJECT</a>
                 </div>
                 <div class="gnb_menu">
-                    <a href="#main_history" class="gnb_menu_link">HISTORY</a>
+                    <a href="#main_appeal" class="gnb_menu_link">APPEAL</a>
                 </div>
                 <div class="gnb_menu">
                     <a href="#contact" class="gnb_menu_link">CONTACT</a>
@@ -81,12 +93,6 @@
             </nav>
             <!-- /menu -->
             <ul class="h_menu">
-                <li class="h_menu_li darkMode">
-                    <div class="h_menu_li_a moon">
-                        <img src="./public/images/moon_icon.svg" alt="" class="h_menu_li_img">
-                    </div>
-                    <p class="h_menu_li_hover">다크모드</p>
-                </li>
                 <li class="h_menu_li nightMode">
                     <div class="h_menu_li_a night">
                         <img src="./public/images/night_icon.svg" alt="" class="h_menu_li_img">
@@ -94,7 +100,8 @@
                     <p class="h_menu_li_hover">라이트모드</p>
                 </li>
                 <li class="h_menu_li">
-                    <a href="https://cottony-lycra-c7e.notion.site/BINI-9c9006b60da641119c39a634dddf4181" class="h_menu_li_a profile" target="_blank">
+                    <a href="https://cottony-lycra-c7e.notion.site/BINI-9c9006b60da641119c39a634dddf4181"
+                        class="h_menu_li_a profile" target="_blank">
                         <img src="./public/images/memo_icon.svg" alt="" class="h_menu_li_img">
                     </a>
                     <p class="h_menu_li_hover">자기소개서</p>
@@ -144,7 +151,7 @@
                             <div class="h_menu_li_a moon">
                                 <img src="./public/images/moon_icon.svg" alt="" class="h_menu_li_img">
                             </div>
-                            <p class="h_menu_li_hover">다크모드</p>
+                            
                         </li>
                         <li class="h_menu_li nightMode">
                             <div class="h_menu_li_a night">
@@ -153,7 +160,8 @@
                             <p class="h_menu_li_hover">라이트모드</p>
                         </li>
                         <li class="h_menu_li">
-                            <a href="https://cottony-lycra-c7e.notion.site/BINI-9c9006b60da641119c39a634dddf4181" class="h_menu_li_a profile" target="_blank">
+                            <a href="https://cottony-lycra-c7e.notion.site/BINI-9c9006b60da641119c39a634dddf4181"
+                                class="h_menu_li_a profile" target="_blank">
                                 <img src="./public/images/memo_icon.svg" alt="" class="h_menu_li_img">
                             </a>
                             <p class="h_menu_li_hover">자기소개서</p>
@@ -175,103 +183,425 @@
         <!-- main banner -->
         <section class="main_banner">
             <img src="./public/images/main_bg.png" alt="">
-            <div class="mb_desc">
-                <strong class="learning">배움</strong>을 향해 달려가는 <strong class="publisher">퍼블리셔</strong> <br>
-                <strong class="step"><img src="./public/images/main_icon.svg" alt=""> 성장의 과정</strong>을 즐기는 사람
+            <div class="inner">
+                <div class="mb_desc">
+                    <span class="top">
+                        <span class="txt_box">Lee-YeBin</span>
+                        <div class="text">
+                            <em class="point">WEB PUBLISHER</em>
+                        </div>
+                    </span>
+                    <span class="bottom">
+                        <div class="text"><em class="point">WEB DESIGNER</em> </div>
+                        <span class="txt_box">Equipped</span>
+                    </span>
+                    <!-- <strong class="step"><img src="./public/images/main_icon.svg" alt=""> 성장의 과정</strong>을 즐기는 사람 -->
+                </div>
+                <div class="refer_wrap">
+                    <div class="refer_txt">
+                        <div class="sub_logo">
+                            <em></em>
+                            <em></em>
+                            <em></em>
+                            <em></em>
+
+                        </div>
+                        <span class="tit">여러가지의 역량이 모여 하나의 힘이 됩니다</span>
+                        <span class="txt"> 효과적인 <em class="bold">소통</em>과 탄탄한 <em class="bold">전문성</em>을 바탕으로 원활한 협업을
+                            이끌어 냅니다. <br> 뛰어난 <em class="bold">문제해결능력</em>과 <em class="bold">유연성</em>으로 변화에 빠르게 대응하여 성과를
+                            만들어 냅니다. </span>
+                    </div>
+                    <a href="#main_about" class="scroll_down">
+                        <div class="desc">
+                            <span> SCROLL <br> DOWN </span>
+                            <img src="./public/images/arrow2_bottom.svg" alt="스크롤 밑으로">
+                        </div>
+                        <div class="icon">
+                            <img src="./public/images/mouse.svg" alt="">
+                        </div>
+                    </a>
+                </div>
             </div>
         </section>
         <!-- /main banner -->
         <!-- about -->
         <section class="main_about" id="main_about">
             <div class="inner">
-                <div class="about_photo" data-aos="fade-right" data-aos-delay="50" data-aos-duration="500">
-                    <img src="./public/images/profile_img.png" alt="" class="about_photo_img">
-                </div>
-                <div class="about_desc" data-aos="fade-left" data-aos-delay="50" data-aos-duration="500">
-                    <span class="main_tit1">
-                        <strong class="main_tit_name1">BINI</strong> 
-                        <img src="./public/images/main_icon.svg" alt="" class="main_tit_img">
-                        <strong class="main_tit_name2">About</strong>
-                    </span>
-                    <div class="about_name_wrap">
-                        <span class="about_name">이예빈 / 98.11.10</span>
-                        <a href="https://cottony-lycra-c7e.notion.site/BINI-9c9006b60da641119c39a634dddf4181" class="about_profile" target="_blank">
-                            자기소개 더보기 
-                            <img src="./public/images/arrow2_right.svg" alt="" class="about_profile_img">
-                            <img src="./public/images/arrow2_right_w.svg" alt="" class="about_profile_img_w">
-                        </a>
+                <div class="top" data-aos="fade-right" data-aos-delay="50" data-aos-duration="500">
+                    <div class="about_photo" >
+                        <img src="./public/images/profile_img.png" alt="" class="about_photo_img">
                     </div>
-                    <span class="about_span">
-                        <p class="about_span_p">
-                            안녕하세요! 배움과 성장을 즐기는 웹 퍼블리셔 이예빈입니다. <br>
-                            사용자 중심의 디자인을 구축하고 협업하기 좋은 HTML 구조를 작업하고 연구합니다. <br>
-                        </p>
-                        <p class="about_span_p">
-                            PHP 프레임워크 환경에서 HTML 마크업 작업이 가능하며 <br>
-                            재사용할 수 있는 CSS 코드를 효과적으로 만들 수 있습니다. <br>
-                        </p>
-                        <p class="about_span_p">
-                            팀원과의 협력을 통해 더 좋은 결과물을 만들 수 있기에 커뮤니케이션을 중요시합니다. <br>
-                            새로운 기회와 도전을 함께 하며, 사용자에게 최적의 경험을 제공하고 싶습니다.<br>
-                        </p>
-                    </span>
+                    <div class="about_desc">
+                        <span class="main_tit1">
+                            <strong class="main_tit_name1">BINI</strong>
+                            <img src="./public/images/main_icon.svg" alt="" class="main_tit_img">
+                            <strong class="main_tit_name2">About</strong>
+                        </span>
+                        <div class="about_name_wrap">
+                            <span class="about_name">이예빈 / 98.11.10</span>
+                            
+                        </div>
+                        <span class="about_span">
+                            <p class="about_span_p">
+                                안녕하세요! 공공기관 프로젝트를 중점으로 진행해온 4년차 웹 퍼블리셔 이예빈입니다. <br>
+                                사용자 경험에 대한 만족 뿐만 아니라, 효율적인 코드 작성으로 유지보수 및 빠르게 프로젝트를 수행할 수 있습니다.
+                            </p>
+                            <p class="about_span_p">
+                                전자정부프레임워크 환경(Spring Boot) 및 PHP 프레임워크 환경(코드이그나이트, 그누보드), cafe24 등 다양한 환경에서 HTML 마크업 및 CSS 작업을 할 수 있습니다.<br>
+                                
+                            </p>
+                            <p class="about_span_p">
+                                클라이언트가 만족하고 사용자 중심의 웹사이트를 구축하는 것을 중점으로 소통할 수 있는 능력을 가졌습니다. <br>
+                                팀원과의 원활한 소통이 더 좋은 결과물을 만들 수 있기에 커뮤니케이션을 중요하게 생각합니다.
+                            </p>
+                            
+                        </span>
+                        <a href="https://cottony-lycra-c7e.notion.site/BINI-9c9006b60da641119c39a634dddf4181"
+                                class="about_profile" target="_blank">
+                                자기소개 더보기
+                                <img src="./public/images/arrow2_right.svg" alt="" class="about_profile_img">
+                                <img src="./public/images/arrow2_right_w.svg" alt="" class="about_profile_img_w">
+                            </a>
+                    </div>
+                </div>
+                <div class="about_group_wrap" data-aos="fade-left" data-aos-delay="50" data-aos-duration="500">
+                    <div class="about_group">
+                        <span class="tit">주요 경력 <img src="./public/images/main_icon_2.svg" alt=""></span>
+                        <ul class="list">
+                            <li class="item">
+                                <span class="txt">타임컴즈/연구원(퍼블리셔)</span>
+                                <span class="num">23.11 ~ 24.12</span>
+                            </li>
+                            <li class="item">
+                                <span class="txt">㈜플로우/주임(웹디자이너&퍼블리셔)</span>
+                                <span class="num">22.06 ~ 23.08</span>
+                            </li>
+                            <li class="item">
+                                <span class="txt">㈜고구마/사원(웹디자이너&퍼블리셔)</span>
+                                <span class="num">21.09 ~ 22.05</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="about_group">
+                        <span class="tit">경험/활동/교육 <img src="./public/images/main_icon_2.svg" alt=""></span>
+                        <ul class="list">
+                            <li class="item">
+                                <span class="txt">디지털디자인(웹디자인)구직자 양성과정</span>
+                                <span class="num">21.02 ~ 21.07</span>
+                            </li>
+                            <li class="item">
+                                <span class="txt">영진전문대학교/콘텐츠디자인과</span>
+                                <span class="num">19.03 ~ 21.02</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="about_group">
+                        <span class="tit">자격증 <img src="./public/images/main_icon_2.svg" alt=""></span>
+                        <ul class="list">
+                            <li class="item">
+                                <span class="txt">운전면허/2종보통(진행중)</span>
+                                <span class="num">필기합격</span>
+                            </li>
+                            <li class="item">
+                                <span class="txt">웹디자인기능사</span>
+                                <span class="num">22.11</span>
+                            </li>
+                            <li class="item">
+                                <span class="txt">컬러리스트산업기사</span>
+                                <span class="num">21.06</span>
+                            </li>
+                            <li class="item">
+                                <span class="txt">정보처리기능사</span>
+                                <span class="num">16.06</span>
+                            </li>
+                            <li class="item">
+                                <span class="txt">컴퓨터활용능력/2급</span>
+                                <span class="num">16.04</span>
+                            </li>
+                            <li class="item">
+                                <span class="txt">워드프로세서/단일등급</span>
+                                <span class="num">16.02</span>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- /about -->
         <!-- text scroll -->
         <div class="main_scroll">
-            <span class="main_scroll_txt">
-                Bini Portfolio <img src="./public/images/main_icon.svg" alt="" class="main_scroll_img">
-                Bini Portfolio <img src="./public/images/main_icon.svg" alt="" class="main_scroll_img">
-                Bini Portfolio <img src="./public/images/main_icon.svg" alt="" class="main_scroll_img">
-                Bini Portfolio <img src="./public/images/main_icon.svg" alt="" class="main_scroll_img">
-                Bini Portfolio <img src="./public/images/main_icon.svg" alt="" class="main_scroll_img">
-                Bini Portfolio <img src="./public/images/main_icon.svg" alt="" class="main_scroll_img">
-                Bini Portfolio <img src="./public/images/main_icon.svg" alt="" class="main_scroll_img">
-                Bini Portfolio <img src="./public/images/main_icon.svg" alt="" class="main_scroll_img">
-                Bini Portfolio <img src="./public/images/main_icon.svg" alt="" class="main_scroll_img">
-                Bini Portfolio <img src="./public/images/main_icon.svg" alt="" class="main_scroll_img">
-                Bini Portfolio <img src="./public/images/main_icon.svg" alt="" class="main_scroll_img">
-                Bini Portfolio <img src="./public/images/main_icon.svg" alt="" class="main_scroll_img">
-                Bini Portfolio <img src="./public/images/main_icon.svg" alt="" class="main_scroll_img">
-                Bini Portfolio <img src="./public/images/main_icon.svg" alt="" class="main_scroll_img">
-                Bini Portfolio <img src="./public/images/main_icon.svg" alt="" class="main_scroll_img">
-                Bini Portfolio <img src="./public/images/main_icon.svg" alt="" class="main_scroll_img">
-                Bini Portfolio <img src="./public/images/main_icon.svg" alt="" class="main_scroll_img">
-                Bini Portfolio <img src="./public/images/main_icon.svg" alt="" class="main_scroll_img">
-                Bini Portfolio <img src="./public/images/main_icon.svg" alt="" class="main_scroll_img">
-                Bini Portfolio <img src="./public/images/main_icon.svg" alt="" class="main_scroll_img">
-                Bini Portfolio <img src="./public/images/main_icon.svg" alt="" class="main_scroll_img">
-                Bini Portfolio <img src="./public/images/main_icon.svg" alt="" class="main_scroll_img">
+            <span class="main_scroll_txt"> Bini Portfolio <img src="./public/images/main_icon.svg" alt=""
+                    class="main_scroll_img"> Bini Portfolio <img src="./public/images/main_icon.svg" alt=""
+                    class="main_scroll_img"> Bini Portfolio <img src="./public/images/main_icon.svg" alt=""
+                    class="main_scroll_img"> Bini Portfolio <img src="./public/images/main_icon.svg" alt=""
+                    class="main_scroll_img"> Bini Portfolio <img src="./public/images/main_icon.svg" alt=""
+                    class="main_scroll_img"> Bini Portfolio <img src="./public/images/main_icon.svg" alt=""
+                    class="main_scroll_img"> Bini Portfolio <img src="./public/images/main_icon.svg" alt=""
+                    class="main_scroll_img"> Bini Portfolio <img src="./public/images/main_icon.svg" alt=""
+                    class="main_scroll_img"> Bini Portfolio <img src="./public/images/main_icon.svg" alt=""
+                    class="main_scroll_img"> Bini Portfolio <img src="./public/images/main_icon.svg" alt=""
+                    class="main_scroll_img"> Bini Portfolio <img src="./public/images/main_icon.svg" alt=""
+                    class="main_scroll_img"> Bini Portfolio <img src="./public/images/main_icon.svg" alt=""
+                    class="main_scroll_img"> Bini Portfolio <img src="./public/images/main_icon.svg" alt=""
+                    class="main_scroll_img"> Bini Portfolio <img src="./public/images/main_icon.svg" alt=""
+                    class="main_scroll_img"> Bini Portfolio <img src="./public/images/main_icon.svg" alt=""
+                    class="main_scroll_img"> Bini Portfolio <img src="./public/images/main_icon.svg" alt=""
+                    class="main_scroll_img"> Bini Portfolio <img src="./public/images/main_icon.svg" alt=""
+                    class="main_scroll_img"> Bini Portfolio <img src="./public/images/main_icon.svg" alt=""
+                    class="main_scroll_img"> Bini Portfolio <img src="./public/images/main_icon.svg" alt=""
+                    class="main_scroll_img"> Bini Portfolio <img src="./public/images/main_icon.svg" alt=""
+                    class="main_scroll_img"> Bini Portfolio <img src="./public/images/main_icon.svg" alt=""
+                    class="main_scroll_img"> Bini Portfolio <img src="./public/images/main_icon.svg" alt=""
+                    class="main_scroll_img">
             </span>
         </div>
         <!-- /text scroll -->
         <!-- skill -->
-        <section class="main_skill" id="main_skill" >
+        <section class="main_skill" id="main_skill">
             <div class="inner">
                 <span class="main_tit1">
-                    <strong class="main_tit_name1">BINI</strong> 
+                    <strong class="main_tit_name1">BINI</strong>
                     <img src="./public/images/main_icon.svg" alt="" class="main_tit_img">
                     <strong class="main_tit_name2">Skill</strong>
                 </span>
                 <span class="ms_tit">이런 프로그램을 <br class="mobile_br"> 사용할 수 있어요!</span>
-                <p>
-                    다양한 프로그램을 익히고 배우는 것을 좋아합니다. <br>
-                    꾸준히 공부하면서 성장하고 있습니다 :)
-                </p>
-                <div class="skill_wrap">
-                    <div class="skill_item black html" data-aos="fade-up" data-aos-delay="50">HTML</div>
-                    <div class="skill_item shine_blue" data-aos="fade-up" data-aos-delay="550"><img src="./public/images/astroid_blue.svg" alt=""></div>
-                    <div class="skill_item green css" data-aos="fade-up" data-aos-delay="500">CSS</div>
-                    <div class="skill_item white js" data-aos="fade-up" data-aos-delay="150">JAVASCRIPT</div>
-                    <div class="skill_item blue illustrator" data-aos="fade-up" data-aos-delay="100">ILLUSTRATOR</div>
-                    <div class="skill_item black photoshop" data-aos="fade-up" data-aos-delay="250">PHOTOSHOP</div>
-                    <div class="skill_item white xd" data-aos="fade-up" data-aos-delay="350">XD</div>
-                    <div class="skill_item blue figma" data-aos="fade-up" data-aos-delay="450">FIGMA</div>
-                    <div class="skill_item green zeplin" data-aos="fade-up" data-aos-delay="400">ZEPLIN</div>
-                    <div class="skill_item shine_green" data-aos="fade-up" data-aos-delay="600"><img src="./public/images/astroid_green.svg" alt=""></div>
-                    <div class="skill_item blue git" data-aos="fade-up" data-aos-delay="200">GIT</div>
+                <p> 다양한 프로그램을 익히고 배우는 것을 좋아합니다. <br> 꾸준히 공부하면서 성장하고 있습니다 :) </p>
+                <div class="slide">
+                    <div class="swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide w1400n">
+                                <div class="skill_wrap">
+                                    <div class="skill_item black html" data-aos="fade-up" data-aos-delay="50">HTML</div>
+                                    <div class="skill_item shine_blue" data-aos="fade-up" data-aos-delay="550"><img
+                                            src="./public/images/astroid_blue.svg" alt=""></div>
+                                    <div class="skill_item green css" data-aos="fade-up" data-aos-delay="500">CSS</div>
+                                    <div class="skill_item white js" data-aos="fade-up" data-aos-delay="150">JAVASCRIPT
+                                    </div>
+                                    <div class="skill_item blue illustrator" data-aos="fade-up" data-aos-delay="100">
+                                        ILLUSTRATOR
+                                    </div>
+                                    <div class="skill_item black photoshop" data-aos="fade-up" data-aos-delay="250">
+                                        PHOTOSHOP
+                                    </div>
+                                    <div class="skill_item white xd" data-aos="fade-up" data-aos-delay="350">XD</div>
+                                    <div class="skill_item blue figma" data-aos="fade-up" data-aos-delay="450">FIGMA
+                                    </div>
+                                    <div class="skill_item green zeplin" data-aos="fade-up" data-aos-delay="400">
+                                        IntelliJ
+                                    </div>
+                                    <div class="skill_item shine_green" data-aos="fade-up" data-aos-delay="600"><img
+                                            src="./public/images/astroid_green.svg" alt=""></div>
+                                    <div class="skill_item blue gitea" data-aos="fade-up" data-aos-delay="200">GITEA
+                                    </div>
+                                    <div class="skill_item white creatie" data-aos="fade-up" data-aos-delay="500">
+                                        CREATIE
+                                    </div>
+                                    <div class="skill_item black eclipse" data-aos="fade-up" data-aos-delay="300">
+                                        ECLIPSE
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <ul class="skill_level">
+                                    <li class="html">
+                                        <div class="left">
+                                            <div class="icon">
+                                                <img src="./public/images/html_icon.svg" alt="">
+                                            </div>
+                                            <div class="level_info">
+                                                <span class="step">상</span>
+                                                <div class="graph">
+                                                    95%
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="desc">
+                                            <div class="tit">HTML</div>
+                                            <div class="txt">
+                                                공통적으로 사용되는 레이아웃 분석하여 효율적으로 HTML 코드 퍼블리싱 가능 <br>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="css">
+                                        <div class="left">
+                                            <div class="icon">
+                                                <img src="./public/images/css_icon.svg" alt="">
+                                            </div>
+                                            <div class="level_info">
+                                                <span class="step">상</span>
+                                                <div class="graph">
+                                                    95%
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="desc">
+                                            <div class="tit">CSS</div>
+                                            <div class="txt">반응형 웹 및 자연스러운 애니메이션 효과 가능</div>
+                                        </div>
+                                    </li>
+                                    <li class="js">
+                                        <div class="left">
+                                            <div class="icon">
+                                                <img src="./public/images/js_icon.svg" alt="">
+                                            </div>
+                                            <div class="level_info">
+                                                <span class="step">중</span>
+                                                <div class="graph">
+                                                    80%
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="desc">
+                                            <div class="tit">JAVASCRIPT</div>
+                                            <div class="txt">jQuery 기반으로 간단한 동적 효과 구현 가능</div>
+                                        </div>
+                                    </li>
+                                    <li class="ps">
+                                        <div class="left">
+                                            <div class="icon">
+                                                <img src="./public/images/ps_icon.svg" alt="">
+                                            </div>
+                                            <div class="level_info">
+                                                <span class="step">중</span>
+                                                <div class="graph">
+                                                    85%
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="desc">
+                                            <div class="tit">PHOTOSHOP</div>
+                                            <div class="txt">웹페이지 및 카드뉴스 등 웹디자인 작업 가능</div>
+                                        </div>
+                                    </li>
+                                    <li class="ai">
+                                        <div class="left">
+                                            <div class="icon">
+                                                <img src="./public/images/ai_icon.svg" alt="">
+                                            </div>
+                                            <div class="level_info">
+                                                <span class="step">중</span>
+                                                <div class="graph">
+                                                    85%
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="desc">
+                                            <div class="tit">ILLUSTRATOR</div>
+                                            <div class="txt">아이콘과 같은 도형적인 일러스트 구현 가능 </div>
+                                        </div>
+                                    </li>
+                                    <li class="xd">
+                                        <div class="left">
+                                            <div class="icon">
+                                                <img src="./public/images/xd_icon.svg" alt="">
+                                            </div>
+                                            <div class="level_info">
+                                                <span class="step">중</span>
+                                                <div class="graph">
+                                                    85%
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="desc">
+                                            <div class="tit">XD</div>
+                                            <div class="txt">웹페이지 시안 및 디자인 가이드 작업 가능</div>
+                                        </div>
+                                    </li>
+                                    <li class="figma">
+                                        <div class="left">
+                                            <div class="icon">
+                                                <img src="./public/images/figma_icon.svg" alt="">
+                                            </div>
+                                            <div class="level_info">
+                                                <span class="step">상</span>
+                                                <div class="graph">
+                                                    90%
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="desc">
+                                            <div class="tit">FIGMA</div>
+                                            <div class="txt">웹페이지 시안 및 디자인 가이드 작업 가능</div>
+                                        </div>
+                                    </li>
+                                    <li class="creatie">
+                                        <div class="left">
+                                            <div class="icon">
+                                                <img src="./public/images/creatie_icon.svg" alt="">
+                                            </div>
+                                            <div class="level_info">
+                                                <span class="step">중</span>
+                                                <div class="graph">
+                                                    75%
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="desc">
+                                            <div class="tit">CREATIE</div>
+                                            <div class="txt">웹페이지 시안 및 디자인 가이드 작업 가능</div>
+                                        </div>
+                                    </li>
+                                    <li class="intellij">
+                                        <div class="left">
+                                            <div class="icon">
+                                                <img src="./public/images/intellij_icon.svg" alt="">
+                                            </div>
+                                            <div class="level_info">
+                                                <span class="step">중</span>
+                                                <div class="graph">
+                                                    85%
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="desc">
+                                            <div class="tit">IntelliJ</div>
+                                            <div class="txt">JAVA 환경에서 퍼블리싱 작업가능</div>
+                                        </div>
+                                    </li>
+                                    <li class="eclipse">
+                                        <div class="left">
+                                            <div class="icon">
+                                                <img src="./public/images/eclipse_icon.svg" alt="">
+                                            </div>
+                                            <div class="level_info">
+                                                <span class="step">중</span>
+                                                <div class="graph">
+                                                    80%
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="desc">
+                                            <div class="tit">ECLIPSE</div>
+                                            <div class="txt">JAVA 환경에서 퍼블리싱 작업가능</div>
+                                        </div>
+                                    </li>
+                                    <li class="gitea">
+                                        <div class="left">
+                                            <div class="icon">
+                                                <img src="./public/images/gitea_icon.svg" alt="">
+                                            </div>
+                                            <div class="level_info">
+                                                <span class="step">중</span>
+                                                <div class="graph">
+                                                    80%
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="desc">
+                                            <div class="tit">GITEA</div>
+                                            <div class="txt">프로젝트 소스를 자유롭게 업데이트 가능</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="btn">
+                            <button type="button" class="prev"><img src="./public/images/arrow2_right.svg"
+                                    alt=""></button>
+                            <button type="button" class="next"><img src="./public/images/arrow2_right.svg"
+                                    alt=""></button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -282,8 +612,8 @@
                 <div class="mp_tit_wrap">
                     <span class="main_tit2">
                         <span>
-                            <strong class="main_tit2_name1">BINI</strong> 
-                            <img src="./public/images/main_icon.svg" alt="" class="main_tit2_img"> 
+                            <strong class="main_tit2_name1">BINI</strong>
+                            <img src="./public/images/main_icon.svg" alt="" class="main_tit2_img">
                         </span>
                         <strong class="main_tit2_name2">Project</strong>
                     </span>
@@ -297,9 +627,138 @@
                     <div id="tab1" class="tab-content active-tab">
                         <ul class="mp_list">
                             <li class="mp_list_item mp_list_2">
+                                <a href="./sub/gcto.html">
+                                    <!-- 경상북도문화관광공사 -->
+                                    <div class="mp_list_photo">
+                                        <img src="./public/images/mp_photo_35.png" alt="" class="mp_list_img">
+                                    </div>
+                                    <span class="mp_list_desc">
+                                        <p class="mp_list_date">작업기간 : 24.10~12</p>
+                                        <p class="mp_list_client">@ 경상북도문화관광공사</p>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="mp_list_item mp_list_2">
+                                <a href="./sub/welfare.html">
+                                    <!-- 김천시 평생학습원 -->
+                                    <div class="mp_list_photo">
+                                        <img src="./public/images/mp_photo_34.png" alt="" class="mp_list_img">
+                                    </div>
+                                    <span class="mp_list_desc">
+                                        <p class="mp_list_date">작업기간 : 24.12</p>
+                                        <p class="mp_list_client">@ 김천시평생교육원</p>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="mp_list_item mp_list_2">
+                                <a href="./sub/gc_memorialpark.html">
+                                    <!-- 김천시립추모공원 -->
+                                    <div class="mp_list_photo">
+                                        <img src="./public/images/mp_photo_33.png" alt="" class="mp_list_img">
+                                    </div>
+                                    <span class="mp_list_desc">
+                                        <p class="mp_list_date">작업기간 : 24.10</p>
+                                        <p class="mp_list_client">@ 김천시설관리공단</p>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="mp_list_item mp_list_2">
+                                <a href="./sub/gotgamfestival.html">
+                                    <!-- 2025 상주시 곶감축제 -->
+                                    <div class="mp_list_photo">
+                                        <img src="./public/images/mp_photo_31.png" alt="" class="mp_list_img">
+                                    </div>
+                                    <span class="mp_list_desc">
+                                        <p class="mp_list_date">작업기간 : 24.9</p>
+                                        <p class="mp_list_client">@ 상주시청</p>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="mp_list_item mp_list_2">
+                                <a href="./sub/gyo_festival.html">
+                                    <!-- 수업나누리 2024 축제 -->
+                                    <div class="mp_list_photo">
+                                        <img src="./public/images/mp_photo_30.png" alt="" class="mp_list_img">
+                                    </div>
+                                    <span class="mp_list_desc">
+                                        <p class="mp_list_date">작업기간 : 24.8</p>
+                                        <p class="mp_list_client">@ 경북교육청</p>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="mp_list_item mp_list_2">
+                                <a href="./sub/timecoms.html">
+                                    <!-- 타임컴즈 -->
+                                    <div class="mp_list_photo">
+                                        <img src="./public/images/mp_photo_32.png" alt="" class="mp_list_img">
+                                    </div>
+                                    <span class="mp_list_desc">
+                                        <p class="mp_list_date">작업기간 : 24.2</p>
+                                        <p class="mp_list_client">@ 타임컴즈</p>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="mp_list_item mp_list_2">
+                                <a href="./sub/gcfoursled.html">
+                                    <!-- 김천시 사계절썰매장 -->
+                                    <div class="mp_list_photo">
+                                        <img src="./public/images/mp_photo_29.png" alt="" class="mp_list_img">
+                                    </div>
+                                    <span class="mp_list_desc">
+                                        <p class="mp_list_date">작업기간 : 24.1 ~ 2</p>
+                                        <p class="mp_list_client">@ 김천시설관리공단</p>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="mp_list_item mp_list_2">
+                                <a href="./sub/cprthemepark.html">
+                                    <!-- 김천시 추풍령 테마파크 -->
+                                    <div class="mp_list_photo">
+                                        <img src="./public/images/mp_photo_28.png" alt="" class="mp_list_img">
+                                    </div>
+                                    <span class="mp_list_desc">
+                                        <p class="mp_list_date">작업기간 : 24.1 ~ 2</p>
+                                        <p class="mp_list_client">@ 김천시설관리공단</p>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="mp_list_item mp_list_2">
+                                <a href="./sub/sangju_lib.html">
+                                    <div class="mp_list_photo">
+                                        <img src="./public/images/mp_photo_27.png" alt="" class="mp_list_img">
+                                    </div>
+                                    <span class="mp_list_desc">
+                                        <p class="mp_list_date">작업기간 : 23.12 ~ 24.1</p>
+                                        <p class="mp_list_client">@ 상주시립도서관</p>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="mp_list_item mp_list_2">
+                                <a href="./sub/gbtis.html">
+                                    <div class="mp_list_photo">
+                                        <img src="./public/images/mp_photo_26.png" alt="" class="mp_list_img">
+                                    </div>
+                                    <span class="mp_list_desc">
+                                        <p class="mp_list_date">작업기간 : 23.11 ~ 12</p>
+                                        <p class="mp_list_client">@ 구미전자정보기술원</p>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="mp_list_item mp_list_2">
+                                <a href="./sub/oohspot.html">
+                                    <div class="mp_list_photo">
+                                        <img src="./public/images/mp_photo_36.png" alt="" class="mp_list_img">
+                                    </div>
+                                    <span class="mp_list_desc">
+                                        <p class="mp_list_date">작업기간 : 23.6 ~ 7</p>
+                                        <p class="mp_list_client">@ 로인즈</p>
+                                    </span>
+                                </a>
+                            </li>
+                            <li class="mp_list_item mp_list_2">
                                 <a href="./sub/dalseo.html">
                                     <div class="mp_list_photo">
-                                        <img src="./public/images/mp_photo_1.png" alt=""  class="mp_list_img">
+                                        <img src="./public/images/mp_photo_1.png" alt="" class="mp_list_img">
                                     </div>
                                     <span class="mp_list_desc">
                                         <p class="mp_list_date">작업기간 : 23.5 ~ 7</p>
@@ -310,7 +769,7 @@
                             <li class="mp_list_item mp_list_2">
                                 <a href="./sub/daegu_edu.html">
                                     <div class="mp_list_photo">
-                                        <img src="./public/images/mp_photo_2.png" alt=""  class="mp_list_img">
+                                        <img src="./public/images/mp_photo_2.png" alt="" class="mp_list_img">
                                     </div>
                                     <span class="mp_list_desc">
                                         <p class="mp_list_date">작업기간 : 23.8</p>
@@ -319,9 +778,9 @@
                                 </a>
                             </li>
                             <li class="mp_list_item mp_list_2">
-                                <a href="./sub/sellerz.html">                            
+                                <a href="./sub/sellerz.html">
                                     <div class="mp_list_photo">
-                                        <img src="./public/images/mp_photo_3.png" alt=""  class="mp_list_img">
+                                        <img src="./public/images/mp_photo_3.png" alt="" class="mp_list_img">
                                     </div>
                                     <span class="mp_list_desc">
                                         <p class="mp_list_date">작업기간 : 23.1 ~ 2</p>
@@ -332,7 +791,7 @@
                             <li class="mp_list_item mp_list_2">
                                 <a href="./sub/mdpaper.html">
                                     <div class="mp_list_photo">
-                                        <img src="./public/images/mp_photo_4.png" alt=""  class="mp_list_img">
+                                        <img src="./public/images/mp_photo_4.png" alt="" class="mp_list_img">
                                     </div>
                                     <span class="mp_list_desc">
                                         <p class="mp_list_date">작업기간 : 22.8 ~ 10</p>
@@ -343,7 +802,7 @@
                             <li class="mp_list_item mp_list_2">
                                 <a href="./sub/neosleep.html">
                                     <div class="mp_list_photo">
-                                        <img src="./public/images/mp_photo_5.png" alt=""  class="mp_list_img">
+                                        <img src="./public/images/mp_photo_5.png" alt="" class="mp_list_img">
                                     </div>
                                     <span class="mp_list_desc">
                                         <p class="mp_list_date">작업기간 : 22.10</p>
@@ -354,7 +813,7 @@
                             <li class="mp_list_item mp_list_2">
                                 <a href="./sub/fnbglobal.html">
                                     <div class="mp_list_photo">
-                                        <img src="./public/images/mp_photo_6.png" alt=""  class="mp_list_img">
+                                        <img src="./public/images/mp_photo_6.png" alt="" class="mp_list_img">
                                     </div>
                                     <span class="mp_list_desc">
                                         <p class="mp_list_date">작업기간 : 23.8</p>
@@ -365,7 +824,7 @@
                             <li class="mp_list_item mp_list_2">
                                 <a href="./sub/donggu_edu.html">
                                     <div class="mp_list_photo">
-                                        <img src="./public/images/mp_photo_7.png" alt=""  class="mp_list_img">
+                                        <img src="./public/images/mp_photo_7.png" alt="" class="mp_list_img">
                                     </div>
                                     <span class="mp_list_desc">
                                         <p class="mp_list_date">작업기간 : 21.10 ~ 11</p>
@@ -376,7 +835,7 @@
                             <li class="mp_list_item mp_list_2">
                                 <a href="./sub/gtl.html">
                                     <div class="mp_list_photo">
-                                        <img src="./public/images/mp_photo_8.png" alt=""  class="mp_list_img">
+                                        <img src="./public/images/mp_photo_8.png" alt="" class="mp_list_img">
                                     </div>
                                     <span class="mp_list_desc">
                                         <p class="mp_list_date">작업기간 : 22.2 ~ 3</p>
@@ -387,7 +846,7 @@
                             <li class="mp_list_item mp_list_2">
                                 <a href="./sub/hustar.html">
                                     <div class="mp_list_photo">
-                                        <img src="./public/images/mp_photo_9-1.png" alt=""  class="mp_list_img">
+                                        <img src="./public/images/mp_photo_9-1.png" alt="" class="mp_list_img">
                                     </div>
                                     <span class="mp_list_desc">
                                         <p class="mp_list_date">작업기간 : 21.11 ~ 22.2 </p>
@@ -398,7 +857,7 @@
                             <li class="mp_list_item mp_list_2">
                                 <a href="./sub/memo.html">
                                     <div class="mp_list_photo">
-                                        <img src="./public/images/mp_photo_10.png" alt=""  class="mp_list_img">
+                                        <img src="./public/images/mp_photo_10.png" alt="" class="mp_list_img">
                                     </div>
                                     <span class="mp_list_desc">
                                         <p class="mp_list_date">작업기간 : 23.3</p>
@@ -414,7 +873,7 @@
                             <li class="mp_list_item mp_list_2">
                                 <a href="./sub/mix&match.html">
                                     <div class="mp_list_photo">
-                                        <img src="./public/images/mp_photo_14.png" alt=""  class="mp_list_img">
+                                        <img src="./public/images/mp_photo_14.png" alt="" class="mp_list_img">
                                     </div>
                                     <span class="mp_list_desc">
                                         <p class="mp_list_date">작업기간 : 22.7</p>
@@ -425,7 +884,7 @@
                             <li class="mp_list_item mp_list_2">
                                 <a href="./sub/sellerz_sns.html">
                                     <div class="mp_list_photo">
-                                        <img src="./public/images/mp_photo_16.png" alt=""  class="mp_list_img">
+                                        <img src="./public/images/mp_photo_16.png" alt="" class="mp_list_img">
                                     </div>
                                     <span class="mp_list_desc">
                                         <p class="mp_list_date">작업기간 : 23.3 ~ 5</p>
@@ -436,7 +895,7 @@
                             <li class="mp_list_item mp_list_2">
                                 <a href="./sub/gbe_edu_sns.html">
                                     <div class="mp_list_photo">
-                                        <img src="./public/images/mp_photo_17.png" alt=""  class="mp_list_img">
+                                        <img src="./public/images/mp_photo_17.png" alt="" class="mp_list_img">
                                     </div>
                                     <span class="mp_list_desc">
                                         <p class="mp_list_date">작업기간 : 21.2 ~ 3</p>
@@ -447,7 +906,7 @@
                             <li class="mp_list_item mp_list_2">
                                 <a href="./sub/nam_sns.html">
                                     <div class="mp_list_photo">
-                                        <img src="./public/images/mp_photo_18.png" alt=""  class="mp_list_img">
+                                        <img src="./public/images/mp_photo_18.png" alt="" class="mp_list_img">
                                     </div>
                                     <span class="mp_list_desc">
                                         <p class="mp_list_date">작업기간 : 20.9 ~ 12</p>
@@ -458,7 +917,7 @@
                             <li class="mp_list_item mp_list_2">
                                 <a href="./sub/red_ginseng.html">
                                     <div class="mp_list_photo">
-                                        <img src="./public/images/mp_photo_11.png" alt=""  class="mp_list_img">
+                                        <img src="./public/images/mp_photo_11.png" alt="" class="mp_list_img">
                                     </div>
                                     <span class="mp_list_desc">
                                         <p class="mp_list_date">작업기간 : 22.2</p>
@@ -469,7 +928,7 @@
                             <li class="mp_list_item mp_list_2">
                                 <a href="./sub/naru.html">
                                     <div class="mp_list_photo">
-                                        <img src="./public/images/mp_photo_19.png" alt=""  class="mp_list_img">
+                                        <img src="./public/images/mp_photo_19.png" alt="" class="mp_list_img">
                                     </div>
                                     <span class="mp_list_desc">
                                         <p class="mp_list_date">작업기간 : 23.9</p>
@@ -485,7 +944,7 @@
                             <li class="mp_list_item mp_list_2">
                                 <a href="./sub/dalseo_leflet.html">
                                     <div class="mp_list_photo">
-                                        <img src="./public/images/mp_photo_12.png" alt=""  class="mp_list_img">
+                                        <img src="./public/images/mp_photo_12.png" alt="" class="mp_list_img">
                                     </div>
                                     <span class="mp_list_desc">
                                         <p class="mp_list_date">작업기간 : 22.7</p>
@@ -496,7 +955,7 @@
                             <li class="mp_list_item mp_list_2">
                                 <a href="./sub/dalseo_poster.html">
                                     <div class="mp_list_photo">
-                                        <img src="./public/images/mp_photo_13.png" alt=""  class="mp_list_img">
+                                        <img src="./public/images/mp_photo_13.png" alt="" class="mp_list_img">
                                     </div>
                                     <span class="mp_list_desc">
                                         <p class="mp_list_date">작업기간 : 22.7</p>
@@ -507,7 +966,7 @@
                             <li class="mp_list_item mp_list_2">
                                 <a href="./sub/neoroutine_leflet.html">
                                     <div class="mp_list_photo">
-                                        <img src="./public/images/mp_photo_15.png" alt=""  class="mp_list_img">
+                                        <img src="./public/images/mp_photo_15.png" alt="" class="mp_list_img">
                                     </div>
                                     <span class="mp_list_desc">
                                         <p class="mp_list_date">작업기간 : 22.10</p>
@@ -518,7 +977,7 @@
                             <li class="mp_list_item mp_list_2">
                                 <a href="./sub/labor_step.html">
                                     <div class="mp_list_photo">
-                                        <img src="./public/images/mp_photo_21.png" alt=""  class="mp_list_img">
+                                        <img src="./public/images/mp_photo_21.png" alt="" class="mp_list_img">
                                     </div>
                                     <span class="mp_list_desc">
                                         <p class="mp_list_date">작업기간 : 20.06</p>
@@ -529,7 +988,7 @@
                             <li class="mp_list_item mp_list_2">
                                 <a href="./sub/goblin_bookstore.html">
                                     <div class="mp_list_photo">
-                                        <img src="./public/images/mp_photo_22.png" alt=""  class="mp_list_img">
+                                        <img src="./public/images/mp_photo_22.png" alt="" class="mp_list_img">
                                     </div>
                                     <span class="mp_list_desc">
                                         <p class="mp_list_date">작업기간 : 20.07</p>
@@ -540,7 +999,7 @@
                             <li class="mp_list_item mp_list_2">
                                 <a href="./sub/bibimbap.html">
                                     <div class="mp_list_photo">
-                                        <img src="./public/images/mp_photo_23.png" alt=""  class="mp_list_img">
+                                        <img src="./public/images/mp_photo_23.png" alt="" class="mp_list_img">
                                     </div>
                                     <span class="mp_list_desc">
                                         <p class="mp_list_date">작업기간 : 20.08</p>
@@ -551,7 +1010,7 @@
                             <li class="mp_list_item mp_list_2">
                                 <a href="./sub/tiger.html">
                                     <div class="mp_list_photo">
-                                        <img src="./public/images/mp_photo_24.png" alt=""  class="mp_list_img">
+                                        <img src="./public/images/mp_photo_24.png" alt="" class="mp_list_img">
                                     </div>
                                     <span class="mp_list_desc">
                                         <p class="mp_list_date">작업기간 : 21.04</p>
@@ -562,7 +1021,7 @@
                             <li class="mp_list_item mp_list_2">
                                 <a href="./sub/korea_movie.html">
                                     <div class="mp_list_photo">
-                                        <img src="./public/images/mp_photo_25.png" alt=""  class="mp_list_img">
+                                        <img src="./public/images/mp_photo_25.png" alt="" class="mp_list_img">
                                     </div>
                                     <span class="mp_list_desc">
                                         <p class="mp_list_date">작업기간 : 20.12</p>
@@ -578,23 +1037,18 @@
         </section>
         <!-- /project -->
         <!-- history -->
-        <section class="main_history" id="main_history">
+        <!-- <section class="main_history" id="main_history">
             <div class="inner" data-aos="fade-zoom-in" data-aos-delay="80" data-aos-duration="800">
                 <div class="mh_tit_wrap">
                     <span class="main_tit2">
                         <span>
-                            <strong class="main_tit2_name1">BINI</strong> 
-                            <img src="./public/images/main_icon.svg" alt="" class="main_tit2_img"> 
+                            <strong class="main_tit2_name1">BINI</strong>
+                            <img src="./public/images/main_icon.svg" alt="" class="main_tit2_img">
                         </span>
                         <strong class="main_tit2_name2">History</strong>
                     </span>
-                    <p class="mh_txt">
-                        제가 좋아하는 디자인과 코딩을 위해 <br>
-                        아낌없이 시간을 투자하고 있어요
-                    </p>
-                    <a href="https://bee-blog-0.tistory.com" class="mh_btn" target="_blank">
-                        BINI BLOG 
-                        <img src="./public/images/arrow_right.svg" alt="" class="mh_btn_img">
+                    <p class="mh_txt"> 제가 좋아하는 디자인과 코딩을 위해 <br> 아낌없이 시간을 투자하고 있어요 </p>
+                    <a href="https://bee-blog-0.tistory.com" class="mh_btn" target="_blank"> BINI BLOG <img src="./public/images/arrow_right.svg" alt="" class="mh_btn_img">
                         <img src="./public/images/arrow_right_w.svg" alt="" class="mh_btn_img_w">
                     </a>
                 </div>
@@ -609,9 +1063,7 @@
                                     <strong>#111</strong>
                                     <p>개발자 도구를 유용하게 사용해 보자!</p>
                                 </span>
-                                <p class="mh_slide_txt">
-                                    개발자도구를 그냥 HTML 구조만 보는 용도로 사용한다면 꼭 보세요! 
-                                </p>
+                                <p class="mh_slide_txt"> 개발자도구를 그냥 HTML 구조만 보는 용도로 사용한다면 꼭 보세요! </p>
                                 <p class="mh_slide_date">2022년 1월 3일</p>
                             </div>
                         </a>
@@ -626,9 +1078,7 @@
                                     <strong>#112</strong>
                                     <p>내가 작성한 CSS 코드가 왜 적용되지 않을까?</p>
                                 </span>
-                                <p class="mh_slide_txt">
-                                    퍼블리싱을 하다보면 자신의 의도대로 CSS가 먹히지 않는 경우가 많습니다. 
-                                </p>
+                                <p class="mh_slide_txt"> 퍼블리싱을 하다보면 자신의 의도대로 CSS가 먹히지 않는 경우가 많습니다. </p>
                                 <p class="mh_slide_date">2022년 1월 3일</p>
                             </div>
                         </a>
@@ -643,9 +1093,7 @@
                                     <strong>#113</strong>
                                     <p>반응형에서 이미지 비율 유지하기</p>
                                 </span>
-                                <p class="mh_slide_txt">
-                                    반응형에 맞게 이미지를 맞추기 위해 width를 숫자로 계속 지정하고 계시진 않으신가요??
-                                </p>
+                                <p class="mh_slide_txt"> 반응형에 맞게 이미지를 맞추기 위해 width를 숫자로 계속 지정하고 계시진 않으신가요?? </p>
                                 <p class="mh_slide_date">2022년 2월 3일</p>
                             </div>
                         </a>
@@ -660,34 +1108,29 @@
                                     <strong>#114</strong>
                                     <p>SVG를 활용한 웹 페이지 만들기</p>
                                 </span>
-                                <p class="mh_slide_txt">
-                                    png나 jpg만 사용하여 웹 페이지를 만들진 않으셨나요?
-                                </p>
+                                <p class="mh_slide_txt"> png나 jpg만 사용하여 웹 페이지를 만들진 않으셨나요? </p>
                                 <p class="mh_slide_date">2023년 9월 30일</p>
                             </div>
                         </a>
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- /history -->
         <!-- contact -->
-        <section class="main_contact" id="contact">
+        <!-- <section class="main_contact" id="contact">
             <div class="inner" data-aos="fade-up" data-aos-delay="130" data-aos-duration="700">
                 <span class="main_tit1">
-                    <strong class="main_tit_name1">BINI</strong> 
+                    <strong class="main_tit_name1">BINI</strong>
                     <img src="./public/images/main_icon.svg" alt="" class="main_tit_img">
                     <strong class="main_tit_name2">Contact</strong>
                 </span>
                 <span class="mc_tit">함께 성장하고 발전해 나가고 싶습니다</span>
-                <p>
-                    지금 가지고 있는 역량에 멈추지 않고 끊임없이 공부하고 있습니다. <br>
-                    제자리에 머무르지 않고 끊임없이 나아가겠습니다.
-                </p>
+                <p> 지금 가지고 있는 역량에 멈추지 않고 끊임없이 공부하고 있습니다. <br> 제자리에 머무르지 않고 끊임없이 나아가겠습니다. </p>
                 <ul class="mc_info">
                     <li class="mc_info_li">
                         <span class="mc_info_tit">Phone</span>
-                        <div class="mc_info_txt"><a href="tel:010-6552-3304" >010-6552-3304</a></div>
+                        <div class="mc_info_txt"><a href="tel:010-6552-3304">010-6552-3304</a></div>
                     </li>
                     <li>
                         <span class="mc_info_tit">E-Mail</span>
@@ -695,53 +1138,184 @@
                     </li>
                 </ul>
             </div>
+        </section> -->
+        <section class="main_appeal" id="main_appeal">
+            <div class="sub_logo big">
+                <em></em>
+                <em></em>
+                <em></em>
+                <em></em>
+            </div>
+            <div class="desc">
+                <div class="tit">
+                    주어진 역할에서 책임감있게 수행하겠습니다
+                </div>
+                <div class="txt next">
+                    최선을 다해 좋은 성과를 만들어 내겠습니다
+                </div>
+            </div>
+        </section>
+        <section class="main_contact" id="contact">
+            <div class="inner" data-aos="fade-up" data-aos-delay="130" data-aos-duration="700">
+                <div class="cont">
+                    <div class="desc">
+                        <div class="sub_logo">
+                            <em></em>
+                            <em></em>
+                            <em></em>
+                            <em></em>
+                        </div>
+                        <span class="tit"> 제 포트폴리오를 봐주셔서 감사합니다! <br> BINI에 대해 자세히 알고 싶으시다면 연락해 주세요! </span>
+                        <ul class="link_group">
+                            <li class="item">
+                                <a href="mailto:leeyebin001@naver.com" class="link">
+                                    <span class="txt"><img src="./public/images/mail_icon.svg" alt=""> 이메일 보내기</span>
+                                    <span class="info"><img src="./public/images/mail_icon.svg" alt="">
+                                        leeyebin001@naver.com</span>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="tel:01065523304" class="link">
+                                    <span class="txt"><img src="./public/images/call_icon.svg" alt=""> 전화하기</span>
+                                    <span class="info"><img src="./public/images/call_icon.svg" alt="">
+                                        010-6552-3304</span>
+                                </a>
+                            </li>
+                            <li class="item">
+                                <a href="https://cottony-lycra-c7e.notion.site/BINI-9c9006b60da641119c39a634dddf4181"
+                                    class="link" title="새창열림" target="_blank">
+                                    <span class="txt"><img src="./public/images/memo_icon.svg" alt="" class=""> 자기소개서
+                                        보기</span>
+                                    <span class="info"><img src="./public/images/memo_icon.svg" alt="" class=""> NOTION
+                                        바로가기</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="photo">
+                        <img src="./public/images/main_content_bg_01.png" alt="" class="bg1">
+                        <img src="./public/images/main_content_bg_02.png" alt="" class="bg2">
+                    </div>
+                </div>
+                <footer id="footer">
+                    <div class="f_left">
+                        <img src="./public/images/logo.svg" alt="bini portfolio 사진" class="logo_w">
+                    </div>
+                    <span class="f_copy">Copyright ⓒ 2025 by BINI. All Page Content is property of BINI</span>
+                    <div class="f_right">
+                        <div class="sub_logo">
+                            <em></em>
+                            <em></em>
+                            <em></em>
+                            <em></em>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            <div class="deco right">
+                <img src="./public/images/deco_01.png" alt="">
+            </div>
+
         </section>
     </main>
     <!-- /contact -->
-    <footer id="footer">
-        <span class="f_copy">Copyright ⓒ 2023 by  BINI. All Page Content is property of BINI</span>
-    </footer>
+
     <script>
-        $(function(){
+        $(function () {
+            // 텍스트 변경 로직을 일반화한 함수
+            function createTextRotator($element, texts, interval) {
+                let currentIndex = 0; // 초기 인덱스
+
+                // 로컬 함수로 동작
+                function updateText() {
+                    // 다음 텍스트 설정
+                    currentIndex = (currentIndex + 1) % texts.length;
+                    const newText = texts[currentIndex];
+
+                    // 텍스트 변경 애니메이션
+                    $element.fadeOut(500, function () {
+                        $(this).text(newText).fadeIn(1000);
+                    });
+                }
+
+                // 주기적으로 텍스트 변경
+                setInterval(updateText, interval);
+            }
+
+            // 대상 요소와 텍스트 목록 설정
+            createTextRotator(
+                $(".main_banner .mb_desc .top .text .point"),
+                ["WEB PUBLISHER", "COMMUNICATION", "PROBLEM-SOLVING"],
+                5000
+            );
+
+            createTextRotator(
+                $(".main_banner .mb_desc .bottom .text .point"),
+                ["WEB DESIGNER", "PROFESSINALISM", "PLIABILITY"],
+                5000
+            );
+
+
             // nav scroll
-            $(window).scroll(function(){
+            $(window).scroll(function () {
                 var navScroll = $(this).scrollTop();
-                if(navScroll > 600) {
+                if (navScroll > 600) {
                     $('#header').addClass('nav_scroll');
-                }else{
+                } else {
                     $('#header').removeClass('nav_scroll');
                 }
+
+                // // 현재 스크롤 위치
+                // let scrollPosition = $(this).scrollTop();
+                // $(".mb_desc > .top [class^='text'] em").css({
+                //     transform: `translate3D(-${scrollPosition * 0.5}px, 0, 0)`,
+                // });
+                // $(".mb_desc > .bottom [class^='text'] em").css({
+                //     transform: `translate3D(${scrollPosition * 0.5}px, 0, 0)`,
+                // });
+
+                const scrollY = $(window).scrollTop(); // 현재 스크롤 위치
+
+                $(".section").each(function (index) {
+                    const offset = scrollY - index * $(window).height(); // 섹션별 오프셋 계산
+                    if (offset >= 0 && offset <= $(window).height()) {
+                        // matrix3d 적용: Z축 이동을 기반으로 위로 밀어 올림
+                        const zOffset = -100 * (offset / $(window).height());
+                        $(this).css("transform", `matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, ${zOffset}, 0, 1)`);
+                    }
+                });
             });
+
             // menu scroll on
             function navOn() {
-                var nowTop = $(window).scrollTop();                
+                var nowTop = $(window).scrollTop();
                 var sec1_offset = $('#main_about').offset().top;
                 var sec2_offset = $('#main_skill').offset().top - 150;
                 var sec3_offset = $('#main_project').offset().top - 150;
-                var sec4_offset = $('#main_history').offset().top - 150;
+                var sec4_offset = $('#main_appeal').offset().top - 150;
                 var sec5_offset = $('#contact').offset().top - 150;
 
                 $('.gnb_wrap > .gnb_menu').removeClass('on');
-            
-                if ( nowTop >=  0 && nowTop < sec2_offset) {
+
+                if (nowTop >= 0 && nowTop < sec2_offset) {
                     $('.gnb_wrap > .gnb_menu').eq(0).addClass('on');
-                } else if( nowTop >=  sec2_offset && nowTop < sec3_offset ) {
+                } else if (nowTop >= sec2_offset && nowTop < sec3_offset) {
                     $('.gnb_wrap > .gnb_menu').eq(1).addClass('on');
-                } else if( nowTop >=  sec3_offset && nowTop < sec4_offset ) {
+                } else if (nowTop >= sec3_offset && nowTop < sec4_offset) {
                     $('.gnb_wrap > .gnb_menu').eq(2).addClass('on');
-                } else if( nowTop >=  sec4_offset && nowTop < sec5_offset ) {
+                } else if (nowTop >= sec4_offset && nowTop < sec5_offset) {
                     $('.gnb_wrap > .gnb_menu').eq(3).addClass('on');
-                } else if( nowTop >=  sec5_offset) {
+                } else if (nowTop >= sec5_offset) {
                     $('.gnb_wrap > .gnb_menu').eq(4).addClass('on');
                 }
             };
             navOn();
 
-            $(window).scroll(function() {
+            $(window).scroll(function () {
                 navOn();
             });
             // mp_menu tab
-            $('.mp_menu_li').click(function(){
+            $('.mp_menu_li').click(function () {
                 $('.mp_menu_li').removeClass('click');
                 $(this).addClass('click');
             });
@@ -793,7 +1367,7 @@
                 const pageCont = 8;
                 const start = (pageNum - 1) * pageCont;
                 const end = start + pageCont;
-                
+
                 $mp_list.children('li').hide();
                 $mp_list.children('li').slice(start, end).show();
             }
@@ -807,17 +1381,31 @@
                 $('.tab a[href="#tab3"]').click();
             }
 
-            // margin left : 0
-            setSection2Margin();
-            $(window).resize(function() {
-                setSection2Margin();
-            });
-            function setSection2Margin() {
-                const windowWidth = $(window).width();
-                const maxWidth = 1280; 
-                const margin = (windowWidth - maxWidth - 15) / 2; 
-                $('#main_history .inner').css('margin-left', margin + 'px'); 
-            }
+            // slide - swiper 스킬
+            $(".main_skill").each(function (index) {
+                var $this = $(this);
+                var slideInx = 0;
+                var classNum = $(this).index();
+
+                $this.find(".slide").addClass("slide" + classNum);
+
+                var slideWrap = new Swiper(".slide" + classNum + " .swiper", {
+                    slideToClickedSlide: true,
+                    slidesPerView: 1,
+                    loop: false,
+                    autoplay: false,
+                    navigation: {
+                        nextEl: ".slide" + classNum + " .swiper .btn .next",
+                        prevEl: ".slide" + classNum + " .swiper .btn .prev",
+                    },
+                    on: {
+                        activeIndexChange: function () {
+                            const cIdx = this.realIndex + 1;
+                            $(".slide" + classNum + " .swiper .num span").text(cIdx);
+                        },
+                    },
+                });
+            })
 
             // slide
             $('.mh_slide').slick({
@@ -844,4 +1432,5 @@
         });
     </script>
 </body>
+
 </html>
